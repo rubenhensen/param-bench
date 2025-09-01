@@ -35,12 +35,11 @@ for run in {1..10}; do
     echo "Run $run/10 for $filename..."
     
     # Clean up any existing binary
-    # rm -f "5-param"
+    rm -f "5-param"
     
     # Time the compilation
     start_time=$(date +%s.%N)
-    /home/rhensen/orig/sac2c/build_p/sac2c_p -v4 "$filename" 
-    # >/dev/null 2>&1
+    /home/rhensen/orig/sac2c/build_p/sac2c_p "$filename" >/dev/null 2>&1
     compilation_result=$?
     end_time=$(date +%s.%N)
     
