@@ -32,7 +32,7 @@ for run in {1..10}; do
     
     # Time the compilation
     start_time=$(date +%s.%N)
-    sac2c "$filename" >/dev/null 2>&1
+    /home/rhensen/orig/sac2c/build_p/sac2c_p "$filename" >/dev/null 2>&1
     compilation_result=$?
     end_time=$(date +%s.%N)
     
