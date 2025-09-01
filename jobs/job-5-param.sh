@@ -14,7 +14,14 @@
 # module load gcc/9.3.0
 
 # Set up environment
-cd $SLURM_SUBMIT_DIR
+# Use SBATCH_SUBMIT_DIR (newer) or fallback to current directory
+if [ -n "$SBATCH_SUBMIT_DIR" ]; then
+    cd "$SBATCH_SUBMIT_DIR"
+elif [ -n "$SLURM_SUBMIT_DIR" ]; then
+    cd "$SLURM_SUBMIT_DIR"
+else
+    echo "Warning: No submit directory found, staying in current directory: $(pwd)"
+fi
 
 # Create results file for this job
 echo "filename,param_count,run,compilation_time,job_id,node" > results-5-param.csv
