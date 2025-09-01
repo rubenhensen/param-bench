@@ -35,7 +35,7 @@ for run in {1..10}; do
     echo "Run $run/10 for $filename..."
     
     # Clean up any existing binary
-    rm -f "11-param"
+    # rm -f "11-param"
     
     # Time the compilation
     start_time=$(date +%s.%N)
