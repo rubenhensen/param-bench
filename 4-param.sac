@@ -1,0 +1,13 @@
+use Array: all;
+
+int foo(int[+] a, int[+] b, int[+] c, int[+] d)
+{
+    return a[0] + b[0] + c[0] + d[0];
+}
+
+int main()
+{
+    res = foo([10], [10], [10], [10]);
+
+    return res;
+}

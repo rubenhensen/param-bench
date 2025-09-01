@@ -1,0 +1,13 @@
+use Array: all;
+
+int foo()
+{
+    return 42;
+}
+
+int main()
+{
+    res = foo();
+
+    return res;
+}

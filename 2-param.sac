@@ -1,0 +1,13 @@
+use Array: all;
+
+int foo(int[+] a, int[+] b)
+{
+    return a[0] + b[0];
+}
+
+int main()
+{
+    res = foo([10], [10]);
+
+    return res;
+}
