@@ -1,0 +1,43 @@
+Starting benchmark for 14-param.sac on node cn132
+Job ID: 6476746
+Run 1/10 for 14-param.sac...
+Run 2/10 for 14-param.sac...
+Run 3/10 for 14-param.sac...
+Run 4/10 for 14-param.sac...
+Run 5/10 for 14-param.sac...
+Run 6/10 for 14-param.sac...
+Run 7/10 for 14-param.sac...
+Run 8/10 for 14-param.sac...
+Run 9/10 for 14-param.sac...
+Run 10/10 for 14-param.sac...
+Benchmark complete for 14-param.sac
+Results saved to results-14-param.csv
+
+
+###############################################################################
+Science Cluster
+Job 6476746 for user 'rhensen'
+Finished at: Tue Sep  2 14:10:30 CEST 2025
+
+Job details:
+============
+
+Name                : sac-14-param
+User                : rhensen
+Partition           : csmpi_fpga_long
+Nodes               : cn132
+Cores               : 16
+State               : COMPLETED
+Submit              : 2025-09-02T14:10:24
+Start               : 2025-09-02T14:10:30
+End                 : 2025-09-02T14:10:30
+Reserved walltime   : 02:00:00
+Used walltime       : --
+Used CPU time       : --
+% User (Computation): 52.49%
+% System (I/O)      :  0.00%
+Mem reserved        : 32G
+Max Mem used        : 0.00  (cn132)
+Max Disk Write      : 0.00  (cn132)
+Max Disk Read       : 0.00  (cn132)
+

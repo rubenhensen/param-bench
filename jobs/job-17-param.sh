@@ -4,8 +4,8 @@
 #SBATCH --error=slurm-17-param-%j.err
 #SBATCH --time=02:00:00
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=4G
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=32G
 #SBATCH --account=csmpi
 #SBATCH --partition=csmpi_fpga_long
 #SBATCH --gres=gpu:0
@@ -39,7 +39,7 @@ for run in {1..10}; do
     
     # Time the compilation
     start_time=$(date +%s.%N)
-    /home/rhensen/orig/sac2c/build_p/sac2c_p -v4 "$filename" 
+    /home/rhensen/sac2c/build_p/sac2c_p -v4 "$filename" 
     # >/dev/null 2>&1
     compilation_result=$?
     end_time=$(date +%s.%N)

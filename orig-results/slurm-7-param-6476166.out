@@ -1,0 +1,43 @@
+Starting benchmark for 7-param.sac on node cn132
+Job ID: 6476166
+Run 1/10 for 7-param.sac...
+Run 2/10 for 7-param.sac...
+Run 3/10 for 7-param.sac...
+Run 4/10 for 7-param.sac...
+Run 5/10 for 7-param.sac...
+Run 6/10 for 7-param.sac...
+Run 7/10 for 7-param.sac...
+Run 8/10 for 7-param.sac...
+Run 9/10 for 7-param.sac...
+Run 10/10 for 7-param.sac...
+Benchmark complete for 7-param.sac
+Results saved to results-7-param.csv
+
+
+###############################################################################
+Science Cluster
+Job 6476166 for user 'rhensen'
+Finished at: Tue Sep  2 10:44:59 CEST 2025
+
+Job details:
+============
+
+Name                : sac-7-param
+User                : rhensen
+Partition           : csmpi_fpga_long
+Nodes               : cn132
+Cores               : 16
+State               : COMPLETED
+Submit              : 2025-09-02T10:42:56
+Start               : 2025-09-02T10:43:14
+End                 : 2025-09-02T10:44:59
+Reserved walltime   : 02:00:00
+Used walltime       : 00:01:45
+Used CPU time       : 00:01:44 (efficiency:  6.22%)
+% User (Computation): 95.48%
+% System (I/O)      :  4.52%
+Mem reserved        : 32G
+Max Mem used        : 309.57M (cn132)
+Max Disk Write      : 9.06M (cn132)
+Max Disk Read       : 33.34M (cn132)
+

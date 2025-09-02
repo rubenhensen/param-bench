@@ -1,0 +1,32 @@
+Starting benchmark for 17-param.sac on node cn132
+Job ID: 6476176
+Run 1/10 for 17-param.sac...
+
+
+###############################################################################
+Science Cluster
+Job 6476176 for user 'rhensen'
+Finished at: Tue Sep  2 13:00:42 CEST 2025
+
+Job details:
+============
+
+Name                : sac-17-param
+User                : rhensen
+Partition           : csmpi_fpga_long
+Nodes               : cn132
+Cores               : 16
+State               : CANCELLED by 34220,CANCELLED
+Submit              : 2025-09-02T10:42:57
+Start               : 2025-09-02T13:00:39
+End                 : 2025-09-02T13:00:41
+Reserved walltime   : 02:00:00
+Used walltime       : 00:00:02
+Used CPU time       : --
+% User (Computation): 28.57%
+% System (I/O)      :  0.00%
+Mem reserved        : 32G
+Max Mem used        : 401.98M (cn132)
+Max Disk Write      : 0.00  (cn132)
+Max Disk Read       : 0.00  (cn132)
+
