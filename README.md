@@ -33,8 +33,13 @@ Edit the Makefile to customize:
 ```makefile
 SAC2C_new := /home/rhensen/sac2c/build_p/sac2c_p          # NEW compiler
 SAC2C_orig := /home/rhensen/orig/sac2c/build_p/sac2c_p    # ORIG compiler
-RUNS := 10                                                 # Compilation runs per test
-SLURM_* := ...                                            # SLURM settings
+
+# Library and tree paths for prelude and stdlib
+LIBFLAGS_new := -L ... -T ...   # NEW compiler library paths
+LIBFLAGS_orig := -L ... -T ...  # ORIG compiler library paths
+
+RUNS := 10                      # Compilation runs per test
+SLURM_* := ...                  # SLURM settings
 ```
 
 ## Available Commands
@@ -155,6 +160,13 @@ This repository follows the simplified structure of CFAL-bench:
 - Minimal file clutter
 
 ## Technical Details
+
+### Compiler Invocation
+Each compiler is invoked with library flags (`LIBFLAGS`) that specify paths to:
+- Prelude library (`-L` and `-T` flags for library and tree paths)
+- Stdlib library (`-L` and `-T` flags for library and tree paths)
+
+This ensures the compiler can find all necessary runtime libraries during compilation.
 
 ### Memory Measurement
 Memory is tracked using `/usr/bin/time -f "%M"` which reports maximum resident set size in KB. This is converted to MB in the analysis.

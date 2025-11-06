@@ -6,6 +6,11 @@
 COMPILERS := new orig
 SAC2C_new := /home/rhensen/sac2c/build_p/sac2c_p
 SAC2C_orig := /home/rhensen/orig/sac2c/build_p/sac2c_p
+
+# Library and tree paths for prelude and stdlib
+LIBFLAGS_new := -L /home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/lib/prelude -T /home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/lib/prelude -L /home/rhensen/Stdlib/build/lib -T /home/rhensen/Stdlib/build/lib
+LIBFLAGS_orig := -L /home/rhensen/orig/sac2c/build_p/runtime_build/src/runtime_libraries-build/lib/prelude -T /home/rhensen/orig/sac2c/build_p/runtime_build/src/runtime_libraries-build/lib/prelude -L /home/rhensen/orig/Stdlib/build/lib -T /home/rhensen/orig/Stdlib/build/lib
+
 PARAM_COUNTS := $(shell seq 0 19)
 RUNS := 10
 SOURCE_FILES := $(foreach i,$(PARAM_COUNTS),$(i)-param.sac)
@@ -50,7 +55,7 @@ benchmark-new:
 			echo "  Run $$run/$(RUNS)..."; \
 			rm -f "$$i-param"; \
 			start=$$(date +%s.%N); \
-			/usr/bin/time -f "%M" $(SAC2C_new) "$$filename" >/dev/null 2>/tmp/mem_$$$$; \
+			/usr/bin/time -f "%M" $(SAC2C_new) $(LIBFLAGS_new) "$$filename" >/dev/null 2>/tmp/mem_$$$$; \
 			end=$$(date +%s.%N); \
 			time=$$(echo "$$end - $$start" | bc); \
 			mem=$$(cat /tmp/mem_$$$$ 2>/dev/null || echo "0"); \
@@ -71,7 +76,7 @@ benchmark-orig:
 			echo "  Run $$run/$(RUNS)..."; \
 			rm -f "$$i-param"; \
 			start=$$(date +%s.%N); \
-			/usr/bin/time -f "%M" $(SAC2C_orig) "$$filename" >/dev/null 2>/tmp/mem_$$$$; \
+			/usr/bin/time -f "%M" $(SAC2C_orig) $(LIBFLAGS_orig) "$$filename" >/dev/null 2>/tmp/mem_$$$$; \
 			end=$$(date +%s.%N); \
 			time=$$(echo "$$end - $$start" | bc); \
 			mem=$$(cat /tmp/mem_$$$$ 2>/dev/null || echo "0"); \
@@ -212,8 +217,10 @@ slurm-submit: $(SOURCE_FILES)
 			echo "Submitting $$i-param job for $$compiler compiler..."; \
 			if [ "$$compiler" = "new" ]; then \
 				sac2c_path="$(SAC2C_new)"; \
+				libflags="$(LIBFLAGS_new)"; \
 			else \
 				sac2c_path="$(SAC2C_orig)"; \
+				libflags="$(LIBFLAGS_orig)"; \
 			fi; \
 			job_id=$$(sbatch --parsable \
 				--job-name=sac-$$compiler-$$i \
@@ -234,7 +241,7 @@ slurm-submit: $(SOURCE_FILES)
 						echo 'Run \$$run/$(RUNS) for $$i-param.sac...'; \
 						rm -f $$i-param; \
 						start=\$$(date +%s.%N); \
-						/usr/bin/time -f '%M' $$sac2c_path $$i-param.sac >/dev/null 2>/tmp/mem_\$$\$$; \
+						/usr/bin/time -f '%M' $$sac2c_path $$libflags $$i-param.sac >/dev/null 2>/tmp/mem_\$$\$$; \
 						end=\$$(date +%s.%N); \
 						time=\$$(echo \"\$$end - \$$start\" | bc); \
 						mem=\$$(cat /tmp/mem_\$$\$$ 2>/dev/null || echo '0'); \
