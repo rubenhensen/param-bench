@@ -5,11 +5,11 @@
 # Configuration
 COMPILERS := new orig
 SAC2C_new := /home/rhensen/sac2c/build_p/sac2c_p
-SAC2C_orig := /home/rhensen/orig/sac2c/build_p/sac2c_p
+SAC2C_orig := /home/rhensen/sacoriginal/sac2c/build_p/sac2c_p
 
 # Library and tree paths for prelude and stdlib
 LIBFLAGS_new := -L /home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/lib/prelude -T /home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/lib/prelude -L /home/rhensen/Stdlib/build/lib -T /home/rhensen/Stdlib/build/lib
-LIBFLAGS_orig := -L /home/rhensen/orig/sac2c/build_p/runtime_build/src/runtime_libraries-build/lib/prelude -T /home/rhensen/orig/sac2c/build_p/runtime_build/src/runtime_libraries-build/lib/prelude -L /home/rhensen/orig/Stdlib/build/lib -T /home/rhensen/orig/Stdlib/build/lib
+LIBFLAGS_orig := -L /home/rhensen/sacoriginal/sac2c/build_p/runtime_build/src/runtime_libraries-build/lib/prelude -T /home/rhensen/sacoriginal/sac2c/build_p/runtime_build/src/runtime_libraries-build/lib/prelude -L /home/rhensen/sacoriginal/Stdlib/build/lib -T /home/rhensen/sacoriginal/Stdlib/build/lib
 
 PARAM_COUNTS := $(shell seq 0 19)
 RUNS := 10
@@ -17,7 +17,7 @@ SOURCE_FILES := $(foreach i,$(PARAM_COUNTS),$(i)-param.sac)
 
 # SLURM Configuration
 SLURM_CPUS ?= 1
-SLURM_MEM ?= 4G
+SLURM_MEM ?= 40G
 SLURM_ACCOUNT ?= csmpi
 SLURM_PARTITION ?= csmpi_fpga_long
 SLURM_GPU ?= 0
