@@ -16,7 +16,7 @@ RUNS := 10
 SOURCE_FILES := $(foreach i,$(PARAM_COUNTS),$(i)-param.sac)
 
 # SLURM Configuration
-SLURM_CPUS ?= 1
+SLURM_CPUS ?= 8
 SLURM_MEM ?= 40G
 SLURM_ACCOUNT ?= csmpi
 SLURM_PARTITION ?= csmpi_fpga_long
