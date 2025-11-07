@@ -1,0 +1,86 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+1-param.sac,1,1,.425405597,49508,7583227,cn132
+1-param.sac,1,2,.347195168,In file included from /usr/include/string.h:535,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/essentials_h/wrappers.h:41,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:50,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:91:86: error: unknown type name ‘__attribut’
+   91 | __fortify_function char *
+      |                                                                                      ^         
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:91: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘SACl_iv__desc’
+   91 | __fortify_function char *
+      | 
+In file included from /usr/include/string.h:535,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/essentials_h/wrappers.h:41,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:50,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: In function ‘SACwf__MAIN__main’:
+/home/rhensen/param-bench/a.out.c:802:5: error: implicit declaration of function ‘SACf__MAIN__main’; did you mean ‘SACwf__MAIN__main’? [-Werror=implicit-function-declaration]
+  802 | 
+      |     ^               
+      |     SACwf__MAIN__main
+In file included from /usr/include/string.h:535,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/essentials_h/wrappers.h:41,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:50,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: At top level:
+/home/rhensen/param-bench/a.out.c:830:6: error: conflicting types for ‘SACf__MAIN__main’; have ‘void(int *)’ [-Werror]
+  830 |     SAC_ND_DECL_CONST__DATA((SACp_emal_2261__dl_364, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), int, 20)
+      |      ^~~~~~~~~~~~~~~~
+In file included from /usr/include/string.h:535,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/essentials_h/wrappers.h:41,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:50,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c:802:5: note: previous implicit declaration of ‘SACf__MAIN__main’ with type ‘void(int *)’
+  802 | 
+      |     ^               
+In file included from /usr/include/string.h:535,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/essentials_h/wrappers.h:41,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:50,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: In function ‘SACf__MAIN__main’:
+/home/rhensen/param-bench/a.out.c:854:724: error: ‘SAC_HM_arenas’ undeclared (first use in this function); did you mean ‘SAC_HM_arena_t’?
+  854 |   SAC_PF_SETUP();
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^            
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    SAC_HM_arena_t
+/home/rhensen/param-bench/a.out.c:854:724: note: each undeclared identifier is reported only once for each function it appears in
+In file included from /usr/include/string.h:535,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/essentials_h/wrappers.h:41,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:50,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: In function ‘SACf__MAIN__foo__i_1__i_1__i_1’:
+/home/rhensen/param-bench/a.out.c:965:1286: error: ‘SAC_HM_arenas’ undeclared (first use in this function); did you mean ‘SAC_HM_arena_t’?
+/usr/include/string.h: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+49500,7583227,cn132
+1-param.sac,1,3,.422924641,49680,7583227,cn132
+1-param.sac,1,4,.419960034,49480,7583227,cn132
+1-param.sac,1,5,.422778335,49536,7583227,cn132
+1-param.sac,1,6,.419283651,49440,7583227,cn132
+1-param.sac,1,7,.419698441,49508,7583227,cn132
+1-param.sac,1,8,.338541700,In file included from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/phm_h/phm.h:41,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/essentials_h/std.h:30,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:46,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/sys/types.h:228: error: expected ‘:’, ‘,’, ‘;’, ‘}’ or ‘__attribute__’ at end of input
+  228 | #endif
+      | 
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+49480,7583227,cn132
+1-param.sac,1,9,.417302474,49564,7583227,cn132
+1-param.sac,1,10,.421484882,49512,7583227,cn132

@@ -1,0 +1,57 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+1-param.sac,1,1,.353023901,/home/rhensen/param-bench/a.out.c:846:53: error: expected ‘;’, ‘,’ or ‘)’ before ‘SAC_HM_thread_status’
+  846 |      * ND_DECL( (SACl_res, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), int, 0)
+      |                                                     ^~~~~~~~~~~~~~~~~~~~
+/home/rhensen/param-bench/a.out.c:889:1: error: expected identifier or ‘(’ before ‘}’ token
+  889 | SAC_ND_FUN_DEF_END2()
+      | ^
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+43636,7583207,cn132
+1-param.sac,1,2,.411921893,43612,7583207,cn132
+1-param.sac,1,3,.406596334,43600,7583207,cn132
+1-param.sac,1,4,.401277399,43584,7583207,cn132
+1-param.sac,1,5,.404010711,43244,7583207,cn132
+1-param.sac,1,6,.400060881,43540,7583207,cn132
+1-param.sac,1,7,.318831470,In file included from /usr/include/x86_64-linux-gnu/sys/resource.h:24,
+                 from /home/rhensen/sac2c/build_p/include/libsac/profile/profile.h:21,
+                 from /home/rhensen/sac2c/build_p/include/libsac/profile/profile_cuda.h:8,
+                 from /home/rhensen/sac2c/build_p/include/runtime/extras_h/rt_profile.h:35,
+                 from /home/rhensen/sac2c/build_p/include/runtime/essentials_h/std.h:32,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:46,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/resource.h:180: error: expected ‘:’, ‘,’, ‘;’, ‘}’ or ‘__attribute__’ at end of input
+  180 | 
+      | 
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+43312,7583207,cn132
+1-param.sac,1,8,.400588493,43340,7583207,cn132
+1-param.sac,1,9,.316572782,In file included from /home/rhensen/sac2c/build_p/include/runtime/essentials_h/std.h:30,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:46,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/sac2c/build_p/include/runtime/phm_h/phm.h:61: error: expected ‘;’, ‘,’ or ‘)’ at end of input
+   61 | #endif
+      | 
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+43696,7583207,cn132
+1-param.sac,1,10,.407385799,43548,7583207,cn132

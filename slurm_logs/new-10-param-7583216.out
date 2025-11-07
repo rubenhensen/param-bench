@@ -1,0 +1,43 @@
+Starting benchmark for 10-param.sac with new compiler on node $(hostname)
+Job ID: $SLURM_JOB_ID
+Run $run/10 for 10-param.sac...
+Run $run/10 for 10-param.sac...
+Run $run/10 for 10-param.sac...
+Run $run/10 for 10-param.sac...
+Run $run/10 for 10-param.sac...
+Run $run/10 for 10-param.sac...
+Run $run/10 for 10-param.sac...
+Run $run/10 for 10-param.sac...
+Run $run/10 for 10-param.sac...
+Run $run/10 for 10-param.sac...
+Benchmark complete for 10-param.sac with new compiler
+Results saved to results-new-10-param.csv
+
+
+###############################################################################
+Science Cluster
+Job 7583216 for user 'rhensen'
+Finished at: Fri Nov  7 00:14:02 CET 2025
+
+Job details:
+============
+
+Name                : sac-new-10
+User                : rhensen
+Partition           : csmpi_fpga_long
+Nodes               : cn132
+Cores               : 8
+State               : COMPLETED
+Submit              : 2025-11-07T00:13:44
+Start               : 2025-11-07T00:13:58
+End                 : 2025-11-07T00:14:02
+Reserved walltime   : 02:00:00
+Used walltime       : 00:00:04
+Used CPU time       : 00:00:03 (efficiency: 12.49%)
+% User (Computation): 80.22%
+% System (I/O)      :  0.00%
+Mem reserved        : 40G
+Max Mem used        : 68.00K (cn132)
+Max Disk Write      : 0.00  (cn132)
+Max Disk Read       : 0.00  (cn132)
+

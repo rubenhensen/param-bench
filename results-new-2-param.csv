@@ -1,0 +1,80 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+2-param.sac,2,1,.347064570,/home/rhensen/param-bench/a.out.c:846:53: error: expected ‘;’, ‘,’ or ‘)’ before ‘SAC_HM_thread_status’
+  846 |      * ND_DECL( (SACl_res, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), int, 0)
+      |                                                     ^~~~~~~~~~~~~~~~~~~~
+/home/rhensen/param-bench/a.out.c:889:1: error: expected identifier or ‘(’ before ‘}’ token
+  889 | SAC_ND_FUN_DEF_END2()
+      | ^
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+42424,7583208,cn132
+2-param.sac,2,2,.402597984,42592,7583208,cn132
+2-param.sac,2,3,.384612311,42280,7583208,cn132
+2-param.sac,2,4,.308708108,In file included from /usr/include/pthread.h:27,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:207,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:1: error: "me" is not a valid filename
+    1 | /* Copyright (C) 2001-2022 Free Software Foundation, Inc.
+      | 
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:2:17: error: expected identifier or ‘(’ before ‘longlong’
+    2 |    This file is part of the GNU C Library.
+      |                 ^~~~~~~~
+In file included from /usr/include/pthread.h:27,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:207,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: In function ‘SACwf__MAIN__main’:
+/home/rhensen/param-bench/a.out.c:796:5: error: implicit declaration of function ‘SACf__MAIN__main’; did you mean ‘SACwf__MAIN__main’? [-Werror=implicit-function-declaration]
+  796 | 
+      |     ^               
+      |     SACwf__MAIN__main
+In file included from /usr/include/pthread.h:27,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:207,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: At top level:
+/home/rhensen/param-bench/a.out.c:824:6: error: conflicting types for ‘SACf__MAIN__main’; have ‘void(int *)’ [-Werror]
+  824 | /****************************************************************************
+      |      ^~~~~~~~~~~~~~~~
+In file included from /usr/include/pthread.h:27,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:207,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c:796:5: note: previous implicit declaration of ‘SACf__MAIN__main’ with type ‘void(int *)’
+  796 | 
+      |     ^               
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+42436,7583208,cn132
+2-param.sac,2,5,.372594925,42516,7583208,cn132
+2-param.sac,2,6,.391520766,42364,7583208,cn132
+2-param.sac,2,7,.379573523,42412,7583208,cn132
+2-param.sac,2,8,.374698051,42048,7583208,cn132
+2-param.sac,2,9,.376586323,42440,7583208,cn132
+2-param.sac,2,10,.370284529,42032,7583208,cn132

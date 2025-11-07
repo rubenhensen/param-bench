@@ -1,0 +1,90 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+3-param.sac,3,1,.437622890,49316,7583229,cn132
+3-param.sac,3,2,.419510058,49368,7583229,cn132
+3-param.sac,3,3,.418635182,49436,7583229,cn132
+3-param.sac,3,4,.421844819,49312,7583229,cn132
+3-param.sac,3,5,.421420441,49360,7583229,cn132
+3-param.sac,3,6,.340083981,/home/rhensen/param-bench/a.out.i:2: error: ISO C forbids an empty translation unit [-Werror=pedantic]
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+49392,7583229,cn132
+3-param.sac,3,7,.431645865,49432,7583229,cn132
+3-param.sac,3,8,.423796449,49368,7583229,cn132
+3-param.sac,3,9,.351574846,In file included from /usr/include/stdio.h:894,
+                 from /usr/include/hwloc.h:59,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:144: error: expected identifier or ‘(’ before ‘SAC_array_descriptor_t’
+  144 | 
+      | 
+In file included from /usr/include/stdio.h:894,
+                 from /usr/include/hwloc.h:59,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: In function ‘SACwf__MAIN__main’:
+/home/rhensen/param-bench/a.out.c:802:5: error: implicit declaration of function ‘SACf__MAIN__main’; did you mean ‘SACwf__MAIN__main’? [-Werror=implicit-function-declaration]
+  802 | 
+      |     ^               
+      |     SACwf__MAIN__main
+In file included from /usr/include/stdio.h:894,
+                 from /usr/include/hwloc.h:59,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: At top level:
+/home/rhensen/param-bench/a.out.c:830:6: error: conflicting types for ‘SACf__MAIN__main’; have ‘void(int *)’ [-Werror]
+  830 |     SAC_ND_DECL_CONST__DATA((SACp_emal_2261__dl_364, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), int, 20)
+      |      ^~~~~~~~~~~~~~~~
+In file included from /usr/include/stdio.h:894,
+                 from /usr/include/hwloc.h:59,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c:802:5: note: previous implicit declaration of ‘SACf__MAIN__main’ with type ‘void(int *)’
+  802 | 
+      |     ^               
+In file included from /usr/include/stdio.h:894,
+                 from /usr/include/hwloc.h:59,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: In function ‘SACf__MAIN__main’:
+/home/rhensen/param-bench/a.out.c:854:724: error: ‘SAC_HM_arenas’ undeclared (first use in this function); did you mean ‘SAC_HM_arena_t’?
+  854 |   SAC_PF_SETUP();
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^            
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    SAC_HM_arena_t
+/home/rhensen/param-bench/a.out.c:854:724: note: each undeclared identifier is reported only once for each function it appears in
+In file included from /usr/include/stdio.h:894,
+                 from /usr/include/hwloc.h:59,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: In function ‘SACf__MAIN__foo__i_1__i_1__i_1’:
+/home/rhensen/param-bench/a.out.c:965:1286: error: ‘SAC_HM_arenas’ undeclared (first use in this function); did you mean ‘SAC_HM_arena_t’?
+/usr/include/stdio.h: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+49576,7583229,cn132
+3-param.sac,3,10,.431505721,49396,7583229,cn132

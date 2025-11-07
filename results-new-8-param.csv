@@ -1,0 +1,29 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+8-param.sac,8,1,.436067771,47016,7583214,cn132
+8-param.sac,8,2,.434057279,46772,7583214,cn132
+8-param.sac,8,3,.425956901,46756,7583214,cn132
+8-param.sac,8,4,.425008326,46988,7583214,cn132
+8-param.sac,8,5,.423222939,47008,7583214,cn132
+8-param.sac,8,6,.431342101,47000,7583214,cn132
+8-param.sac,8,7,.426700209,47052,7583214,cn132
+8-param.sac,8,8,.338577703,In file included from /usr/include/x86_64-linux-gnu/sys/resource.h:24,
+                 from /home/rhensen/sac2c/build_p/include/libsac/profile/profile.h:21,
+                 from /home/rhensen/sac2c/build_p/include/libsac/profile/profile_cuda.h:8,
+                 from /home/rhensen/sac2c/build_p/include/runtime/extras_h/rt_profile.h:35,
+                 from /home/rhensen/sac2c/build_p/include/runtime/essentials_h/std.h:32,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:46,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/resource.h:180: error: expected ‘:’, ‘,’, ‘;’, ‘}’ or ‘__attribute__’ at end of input
+  180 | 
+      | 
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+46972,7583214,cn132
+8-param.sac,8,9,.421341008,46860,7583214,cn132
+8-param.sac,8,10,.431287197,47048,7583214,cn132

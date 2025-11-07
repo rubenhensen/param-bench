@@ -1,0 +1,195 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+10-param.sac,10,1,.446398072,48496,7583216,cn132
+10-param.sac,10,2,.368688012,/home/rhensen/param-bench/a.out.c:1227:21: error: expected declaration specifiers or ‘...’ before ‘(’ token
+ 1227 | AC_ND_PRF_SxS__DATA((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3069__pinl_187__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |                     ^
+/home/rhensen/param-bench/a.out.c:1227:116: error: expected declaration specifiers or ‘...’ before ‘T_int’
+ 1227 | AC_ND_PRF_SxS__DATA((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3069__pinl_187__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |                                                                                                                    ^~~~~
+/home/rhensen/param-bench/a.out.c:1227:123: error: unknown type name ‘SAC_ND_PRF_ADD’
+ 1227 | AC_ND_PRF_SxS__DATA((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3069__pinl_187__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |                                                                                                                           ^~~~~~~~~~~~~~
+/home/rhensen/param-bench/a.out.c:1227:139: error: unknown type name ‘SACp_emal_3070__pinl_165__mose_74’
+ 1227 | AC_ND_PRF_SxS__DATA((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3069__pinl_187__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |                                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rhensen/param-bench/a.out.c:1227:174: error: unknown type name ‘SACp_emal_3069__pinl_187__mose_74’
+ 1227 | AC_ND_PRF_SxS__DATA((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3069__pinl_187__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |                                                                                                                                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rhensen/param-bench/a.out.c:1229:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+ 1229 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |     ^
+/home/rhensen/param-bench/a.out.c:1229:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+ 1229 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |       ^
+/home/rhensen/param-bench/a.out.c:1229:9: error: expected identifier or ‘(’ before ‘{’ token
+ 1229 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |         ^
+/home/rhensen/param-bench/a.out.c:1229:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+ 1229 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |                                                                                                                           ^
+/home/rhensen/param-bench/a.out.c:1230:5: error: expected identifier or ‘(’ before ‘{’ token
+ 1230 |     SAC_ND_FREE((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |     ^
+/home/rhensen/param-bench/a.out.c:1231:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+ 1231 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3072__pinl_121__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3072__pinl_121__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |     ^
+/home/rhensen/param-bench/a.out.c:1231:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+ 1231 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3072__pinl_121__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3072__pinl_121__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |       ^
+/home/rhensen/param-bench/a.out.c:1231:9: error: expected identifier or ‘(’ before ‘{’ token
+ 1231 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3072__pinl_121__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3072__pinl_121__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |         ^
+/home/rhensen/param-bench/a.out.c:1231:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+ 1231 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3072__pinl_121__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3072__pinl_121__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |                                                                                                                           ^
+/home/rhensen/param-bench/a.out.c:1232:5: error: expected identifier or ‘(’ before ‘{’ token
+ 1232 |     SAC_ND_FREE((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |     ^
+/home/rhensen/param-bench/a.out.c:1236:5: error: expected identifier or ‘(’ before ‘{’ token
+ 1236 |     SAC_ND_RET_out( (SAC_arg_1, (SCL, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (INT, ))))))))), (SACp_emal_3072__pinl_121__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))))
+      |     ^
+/home/rhensen/param-bench/a.out.c:1237:5: error: expected identifier or ‘(’ before ‘return’
+ 1237 |     return;
+      |     ^~~~~~
+/home/rhensen/param-bench/a.out.c:1239:3: error: expected identifier or ‘(’ before ‘}’ token
+ 1239 |   }
+      |   ^
+/home/rhensen/param-bench/a.out.c:1243:1: error: expected identifier or ‘(’ before ‘}’ token
+ 1243 | }
+      | ^
+/home/rhensen/param-bench/a.out.c:1244:1: error: expected identifier or ‘(’ before ‘}’ token
+ 1244 | SAC_ND_FUN_DEF_END2()
+      | ^
+/home/rhensen/param-bench/a.out.c:1246:5: error: redefinition of ‘main’
+ 1246 | int main( int __argc, char *__argv[])
+      |     ^~~~
+/home/rhensen/param-bench/a.out.c:1200:5: note: previous definition of ‘main’ with type ‘int(int,  char **)’
+ 1200 | int main( int __argc, char *__argv[])
+      |     ^~~~
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+48560,7583216,cn132
+10-param.sac,10,3,.443237025,48216,7583216,cn132
+10-param.sac,10,4,.450097801,48560,7583216,cn132
+10-param.sac,10,5,.444785368,48384,7583216,cn132
+10-param.sac,10,6,.378077745,/home/rhensen/param-bench/a.out.c: In function ‘SACf__MAIN__foo__i_1__i_1__i_1__i_1__i_1__i_1__i_1__i_1__i_1’:
+/home/rhensen/param-bench/a.out.c:1175:3: error: ‘O’ undeclared (first use in this function)
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |   ^
+/home/rhensen/param-bench/a.out.c:1175:3: note: each undeclared identifier is reported only once for each function it appears in
+/home/rhensen/param-bench/a.out.c:1175:7: error: ‘NON’ undeclared (first use in this function)
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |       ^~~
+/home/rhensen/param-bench/a.out.c:1175:13: error: ‘NOT’ undeclared (first use in this function)
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |             ^~~
+/home/rhensen/param-bench/a.out.c:1175:19: error: ‘INT’ undeclared (first use in this function)
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                   ^~~
+/home/rhensen/param-bench/a.out.c:1175:24: error: expected expression before ‘)’ token
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                        ^
+/home/rhensen/param-bench/a.out.c:1175:27: error: expected statement before ‘)’ token
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                           ^
+/home/rhensen/param-bench/a.out.c:1175:28: error: expected statement before ‘)’ token
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                            ^
+/home/rhensen/param-bench/a.out.c:1175:29: error: expected statement before ‘)’ token
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                             ^
+/home/rhensen/param-bench/a.out.c:1175:30: error: expected statement before ‘)’ token
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                              ^
+/home/rhensen/param-bench/a.out.c:1175:31: error: expected statement before ‘)’ token
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                               ^
+/home/rhensen/param-bench/a.out.c:1175:32: error: expected statement before ‘)’ token
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                                ^
+/home/rhensen/param-bench/a.out.c:1175:33: error: expected expression before ‘,’ token
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                                 ^
+/home/rhensen/param-bench/a.out.c:1175:39: error: ‘SACp_emal_3073__flat_30’ undeclared (first use in this function); did you mean ‘SACp_emal_2993__flat_27’?
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                       SACp_emal_2993__flat_27
+/home/rhensen/param-bench/a.out.c:1175:65: error: ‘SCL’ undeclared (first use in this function)
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                                                                 ^~~
+/home/rhensen/param-bench/a.out.c:1175:71: error: ‘NHD’ undeclared (first use in this function)
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                                                                       ^~~
+/home/rhensen/param-bench/a.out.c:1175:77: error: ‘NUQ’ undeclared (first use in this function)
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                                                                             ^~~
+/home/rhensen/param-bench/a.out.c:1175:89: error: ‘GLO’ undeclared (first use in this function)
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                                                                                         ^~~
+/home/rhensen/param-bench/a.out.c:1175:123: error: expected statement before ‘)’ token
+ 1175 |   O, (NON, (NOT, (INT, ))))))))), 1, (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), )
+      |                                                                                                                           ^
+/home/rhensen/param-bench/a.out.c:1176:7: error: expected expression before ‘/’ token
+ 1176 |      */
+      |       ^
+/home/rhensen/param-bench/a.out.c:1179:7: error: ‘SACp_emal_3064__pinl_297__mose_74’ undeclared (first use in this function); did you mean ‘SACp_emal_2984__pinl_292__mose_74’?
+ 1179 |     SAC_ND_WRITE_READ_COPY( (SACp_emal_3064__pinl_297__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0, (SACl_b, (AKS, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), SAC_ND_READ( (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), )
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       SACp_emal_2984__pinl_292__mose_74
+/home/rhensen/param-bench/a.out.c:1187:7: error: ‘SACp_emal_3063__pinl_319__mose_74’ undeclared (first use in this function); did you mean ‘SACp_emal_2991__pinl_138__mose_74’?
+ 1187 |     SAC_ND_WRITE_READ_COPY( (SACp_emal_3063__pinl_319__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0, (SACl_a, (AKS, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), SAC_ND_READ( (SACp_emal_3073__flat_30, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), )
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       SACp_emal_2991__pinl_138__mose_74
+/home/rhensen/param-bench/a.out.c:1193:11: error: ‘SACp_emal_3065__pinl_275__mose_74’ undeclared (first use in this function); did you mean ‘SACp_emal_2985__pinl_270__mose_74’?
+ 1193 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3065__pinl_275__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3065__pinl_275__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3064__pinl_297__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |           SACp_emal_2985__pinl_270__mose_74
+/home/rhensen/param-bench/a.out.c:1195:11: error: ‘SACp_emal_3066__pinl_253__mose_74’ undeclared (first use in this function); did you mean ‘SACp_emal_2986__pinl_248__mose_74’?
+ 1195 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3066__pinl_253__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3066__pinl_253__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3065__pinl_275__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |           SACp_emal_2986__pinl_248__mose_74
+/home/rhensen/param-bench/a.out.c:1197:11: error: ‘SACp_emal_3067__pinl_231__mose_74’ undeclared (first use in this function); did you mean ‘SACp_emal_2987__pinl_226__mose_74’?
+ 1197 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3067__pinl_231__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3067__pinl_231__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3066__pinl_253__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |           SACp_emal_2987__pinl_226__mose_74
+/home/rhensen/param-bench/a.out.c:1199:11: error: ‘SACp_emal_3068__pinl_209__mose_74’ undeclared (first use in this function); did you mean ‘SACp_emal_2988__pinl_204__mose_74’?
+ 1199 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3068__pinl_209__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3068__pinl_209__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3067__pinl_231__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |           SACp_emal_2988__pinl_204__mose_74
+/home/rhensen/param-bench/a.out.c:1201:11: error: ‘SACp_emal_3069__pinl_187__mose_74’ undeclared (first use in this function); did you mean ‘SACp_emal_2989__pinl_182__mose_74’?
+ 1201 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3069__pinl_187__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3069__pinl_187__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3068__pinl_209__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |           SACp_emal_2989__pinl_182__mose_74
+/home/rhensen/param-bench/a.out.c:1203:11: error: ‘SACp_emal_3070__pinl_165__mose_74’ undeclared (first use in this function); did you mean ‘SACp_emal_2990__pinl_160__mose_74’?
+ 1203 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3069__pinl_187__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |           SACp_emal_2990__pinl_160__mose_74
+/home/rhensen/param-bench/a.out.c:1205:11: error: ‘SACp_emal_3071__pinl_143__mose_74’ undeclared (first use in this function); did you mean ‘SACp_emal_2991__pinl_138__mose_74’?
+ 1205 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3070__pinl_165__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |           SACp_emal_2991__pinl_138__mose_74
+/home/rhensen/param-bench/a.out.c:1207:11: error: ‘SACp_emal_3072__pinl_121__mose_74’ undeclared (first use in this function); did you mean ‘SACp_emal_2992__pinl_116__mose_74’?
+ 1207 |     SAC_ND_PRF_SxS__DATA((SACp_emal_3072__pinl_121__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), T_int, SAC_ND_PRF_ADD, SAC_ND_READ((SACp_emal_3072__pinl_121__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0), SAC_ND_READ((SACp_emal_3071__pinl_143__mose_74, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0))
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |           SACp_emal_2992__pinl_116__mose_74
+/home/rhensen/param-bench/a.out.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+48396,7583216,cn132
+10-param.sac,10,7,.447093369,48560,7583216,cn132
+10-param.sac,10,8,.445315234,48328,7583216,cn132
+10-param.sac,10,9,.444123773,48564,7583216,cn132
+10-param.sac,10,10,.447689740,48468,7583216,cn132

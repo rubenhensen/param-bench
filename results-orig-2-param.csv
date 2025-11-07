@@ -1,0 +1,106 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+2-param.sac,2,1,.334542367,/home/rhensen/param-bench/a.out.c:873:1: error: expected identifier or ‘(’ before ‘.’ token
+/home/rhensen/param-bench/a.out.c:873:7: error: missing terminating " character [-Werror]
+/home/rhensen/param-bench/a.out.c:873:7: error: missing terminating " character
+/home/rhensen/param-bench/a.out.c:888:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:900:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:905:37: error: expected declaration specifiers or ‘...’ before ‘&’ token
+/home/rhensen/param-bench/a.out.c:905:48: error: unknown type name ‘SACp_emal_2649__flat_14’
+/home/rhensen/param-bench/a.out.c:905:73: error: unknown type name ‘SACp_emal_2649__flat_14__desc’
+/home/rhensen/param-bench/a.out.c:905:104: error: unknown type name ‘SACp_emal_2649__flat_14’
+/home/rhensen/param-bench/a.out.c:905:129: error: unknown type name ‘SACp_emal_2649__flat_14__desc’
+/home/rhensen/param-bench/a.out.c:905:160: error: unknown type name ‘SACp_emal_2649__flat_14’
+/home/rhensen/param-bench/a.out.c:905:185: error: unknown type name ‘SACp_emal_2649__flat_14__desc’
+/home/rhensen/param-bench/a.out.c:910:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:915:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:916:5: error: expected identifier or ‘(’ before ‘return’
+/home/rhensen/param-bench/a.out.c:918:3: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:922:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:923:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1008:5: error: redefinition of ‘main’
+/home/rhensen/param-bench/a.out.c:846:5: note: previous definition of ‘main’ with type ‘int(int,  char **)’
+  846 | int main( int __argc, char *__argv[])
+      |     ^~~~
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+46556,7583228,cn132
+2-param.sac,2,2,.321182977,/home/rhensen/param-bench/a.out.i:2: error: ISO C forbids an empty translation unit [-Werror=pedantic]
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+46492,7583228,cn132
+2-param.sac,2,3,.326595829,In file included from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/hwloc.h:648: error: unknown type name ‘ray_descriptor_t’
+  648 |       struct hwloc_pcidev_attr_s pci;
+      | 
+/usr/include/hwloc.h:648: error: expected identifier or ‘(’ before ‘int’
+In file included from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c:535:1: error: expected specifier-qualifier-list before ‘extern’
+  535 | SAC_C_EXTERN
+      | ^~~~~~
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+46492,7583228,cn132
+2-param.sac,2,4,.385770351,46500,7583228,cn132
+2-param.sac,2,5,.382598204,46492,7583228,cn132
+2-param.sac,2,6,.387214698,46480,7583228,cn132
+2-param.sac,2,7,.388925385,46484,7583228,cn132
+2-param.sac,2,8,.399813046,46300,7583228,cn132
+2-param.sac,2,9,.382857661,46556,7583228,cn132
+2-param.sac,2,10,.336288801,/home/rhensen/param-bench/a.out.c:873:1: error: expected identifier or ‘(’ before ‘.’ token
+/home/rhensen/param-bench/a.out.c:873:7: error: missing terminating " character [-Werror]
+/home/rhensen/param-bench/a.out.c:873:7: error: missing terminating " character
+/home/rhensen/param-bench/a.out.c:888:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:900:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:905:37: error: expected declaration specifiers or ‘...’ before ‘&’ token
+/home/rhensen/param-bench/a.out.c:905:48: error: unknown type name ‘SACp_emal_2649__flat_14’
+/home/rhensen/param-bench/a.out.c:905:73: error: unknown type name ‘SACp_emal_2649__flat_14__desc’
+/home/rhensen/param-bench/a.out.c:905:104: error: unknown type name ‘SACp_emal_2649__flat_14’
+/home/rhensen/param-bench/a.out.c:905:129: error: unknown type name ‘SACp_emal_2649__flat_14__desc’
+/home/rhensen/param-bench/a.out.c:905:160: error: unknown type name ‘SACp_emal_2649__flat_14’
+/home/rhensen/param-bench/a.out.c:905:185: error: unknown type name ‘SACp_emal_2649__flat_14__desc’
+/home/rhensen/param-bench/a.out.c:910:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:915:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:916:5: error: expected identifier or ‘(’ before ‘return’
+/home/rhensen/param-bench/a.out.c:918:3: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:922:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:923:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1008:5: error: redefinition of ‘main’
+/home/rhensen/param-bench/a.out.c:846:5: note: previous definition of ‘main’ with type ‘int(int,  char **)’
+  846 | int main( int __argc, char *__argv[])
+      |     ^~~~
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+46440,7583228,cn132

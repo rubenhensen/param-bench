@@ -1,0 +1,43 @@
+Starting benchmark for 11-param.sac with new compiler on node $(hostname)
+Job ID: $SLURM_JOB_ID
+Run $run/10 for 11-param.sac...
+Run $run/10 for 11-param.sac...
+Run $run/10 for 11-param.sac...
+Run $run/10 for 11-param.sac...
+Run $run/10 for 11-param.sac...
+Run $run/10 for 11-param.sac...
+Run $run/10 for 11-param.sac...
+Run $run/10 for 11-param.sac...
+Run $run/10 for 11-param.sac...
+Run $run/10 for 11-param.sac...
+Benchmark complete for 11-param.sac with new compiler
+Results saved to results-new-11-param.csv
+
+
+###############################################################################
+Science Cluster
+Job 7583217 for user 'rhensen'
+Finished at: Fri Nov  7 00:14:03 CET 2025
+
+Job details:
+============
+
+Name                : sac-new-11
+User                : rhensen
+Partition           : csmpi_fpga_long
+Nodes               : cn132
+Cores               : 8
+State               : COMPLETED
+Submit              : 2025-11-07T00:13:44
+Start               : 2025-11-07T00:13:58
+End                 : 2025-11-07T00:14:03
+Reserved walltime   : 02:00:00
+Used walltime       : 00:00:05
+Used CPU time       : 00:00:04 (efficiency: 10.38%)
+% User (Computation): 81.40%
+% System (I/O)      :  0.00%
+Mem reserved        : 40G
+Max Mem used        : 0.00  (cn132)
+Max Disk Write      : 0.00  (cn132)
+Max Disk Read       : 0.00  (cn132)
+

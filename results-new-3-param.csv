@@ -1,0 +1,113 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+3-param.sac,3,1,.426299117,43496,7583209,cn132
+3-param.sac,3,2,.316978275,/home/rhensen/param-bench/a.out.c:973:5: error: "/*" within comment [-Werror=comment]
+  973 |     const int SAC_ND_A_MIRROR_SHAPE( (SACl_a, (AKS, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 0) = 1;
+      |      
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc  -I. -I/usr/include -I/usr/local/cuda/include  -I/usr/local/include/sac2c/2.0.0-Tintigny-276-g77433-dirty/release -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -DSAC_TARGET_default_sbi -DSAC_TARGET_STRING=\"default_sbi\" -DSAC_MODEXT_STRING=\".so\" -DSAC_TARGET_ENV_STRING=\"host\" -DSAC_SBI_STRING=\"seq\" -DSAC_RC_METHOD=SAC_RCM_local -DSAC_BACKEND_C99 -DSAC_MT_LIB_ -DSAC_SHRAY_LIB_ -DSAC_MT_MODE=0 -DSAC_DO_RTSPEC=0 -DSAC_DO_CUDA_ALLOC=SAC_CA_system -DSAC_DO_CUDA_SYNC=1 -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -E -o /home/rhensen/param-bench/a.out.i /home/rhensen/param-bench/a.out.c
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+43520,7583209,cn132
+3-param.sac,3,3,.334588150,In file included from /usr/include/hwloc.h:72,
+                 from /home/rhensen/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/incl:250:1: error: data definition has no type or storage class [-Werror]
+/usr/incl:250:3: error: type defaults to ‘int’ in declaration of ‘SAC_arg_1__p’ [-Werror=implicit-int]
+/usr/incl:250:17: error: expected identifier or ‘(’ before ‘longlong’
+In file included from /usr/include/hwloc.h:72,
+                 from /home/rhensen/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: In function ‘SACwf__MAIN__main’:
+/home/rhensen/param-bench/a.out.c:802:5: error: implicit declaration of function ‘SACf__MAIN__main’; did you mean ‘SACwf__MAIN__main’? [-Werror=implicit-function-declaration]
+  802 |     SAC_ND_FUNAP2( SACf__MAIN__main,  SAC_ND_ARG_out( SAC_SET_NT_USG( FAG, (SACp_cwc_27, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, )))))))))), int))
+      |     ^~~~~~~~~~~~~~~~
+      |     SACwf__MAIN__main
+In file included from /usr/include/hwloc.h:72,
+                 from /home/rhensen/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: At top level:
+/home/rhensen/param-bench/a.out.c:830:6: error: conflicting types for ‘SACf__MAIN__main’; have ‘void(int *)’ [-Werror]
+  830 | SAC_ND_DEF_FUN_BEGIN2( SACf__MAIN__main, void,  SAC_ND_PARAM_out( (SAC_arg_1, (SCL, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (INT, ))))))))), int))
+      |      ^~~~~~~~~~~~~~~~
+In file included from /usr/include/hwloc.h:72,
+                 from /home/rhensen/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c:802:5: note: previous implicit declaration of ‘SACf__MAIN__main’ with type ‘void(int *)’
+  802 |     SAC_ND_FUNAP2( SACf__MAIN__main,  SAC_ND_ARG_out( SAC_SET_NT_USG( FAG, (SACp_cwc_27, (SCL, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, )))))))))), int))
+      |     ^~~~~~~~~~~~~~~~
+In file included from /usr/include/hwloc.h:72,
+                 from /home/rhensen/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: In function ‘SACf__MAIN__main’:
+/home/rhensen/param-bench/a.out.c:854:724: error: ‘SAC_HM_arenas’ undeclared (first use in this function); did you mean ‘SAC_HM_arena_t’?
+  854 |     SAC_ND_ALLOC_BEGIN((SACp_emal_2301__flat_24, (AKS, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 5, 1, int)
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^            
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    SAC_HM_arena_t
+/home/rhensen/param-bench/a.out.c:854:724: note: each undeclared identifier is reported only once for each function it appears in
+In file included from /usr/include/hwloc.h:72,
+                 from /home/rhensen/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/home/rhensen/param-bench/a.out.c: In function ‘SACf__MAIN__foo__i_1__i_1__i_1__i_1’:
+/home/rhensen/param-bench/a.out.c:971:1286: error: ‘SAC_HM_arenas’ undeclared (first use in this function); did you mean ‘SAC_HM_arena_t’?
+  971 |      * ND_DECL__MIRROR_PARAM( (SACl_a, (AKS, (NHD, (NUQ, (INT, (GLO, (NON, (NOT, (INT, ))))))))), 1, 1)
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^            
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      SAC_HM_arena_t
+/usr/include/hwloc.h: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+43284,7583209,cn132
+3-param.sac,3,4,.305306748,/home/rhensen/param-bench/a.out.c:973:5: error: "/*" within comment [-Werror=comment]
+  973 |     /*
+      |      
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc  -I. -I/usr/include -I/usr/local/cuda/include  -I/usr/local/include/sac2c/2.0.0-Tintigny-276-g77433-dirty/release -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -DSAC_TARGET_default_sbi -DSAC_TARGET_STRING=\"default_sbi\" -DSAC_MODEXT_STRING=\".so\" -DSAC_TARGET_ENV_STRING=\"host\" -DSAC_SBI_STRING=\"seq\" -DSAC_RC_METHOD=SAC_RCM_local -DSAC_BACKEND_C99 -DSAC_MT_LIB_ -DSAC_SHRAY_LIB_ -DSAC_MT_MODE=0 -DSAC_DO_RTSPEC=0 -DSAC_DO_CUDA_ALLOC=SAC_CA_system -DSAC_DO_CUDA_SYNC=1 -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -E -o /home/rhensen/param-bench/a.out.i /home/rhensen/param-bench/a.out.c
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+43516,7583209,cn132
+3-param.sac,3,5,.310722227,/home/rhensen/param-bench/a.out.c:973:5: error: "/*" within comment [-Werror=comment]
+  973 |     /*
+      |      
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc  -I. -I/usr/include -I/usr/local/cuda/include  -I/usr/local/include/sac2c/2.0.0-Tintigny-276-g77433-dirty/release -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -DSAC_TARGET_default_sbi -DSAC_TARGET_STRING=\"default_sbi\" -DSAC_MODEXT_STRING=\".so\" -DSAC_TARGET_ENV_STRING=\"host\" -DSAC_SBI_STRING=\"seq\" -DSAC_RC_METHOD=SAC_RCM_local -DSAC_BACKEND_C99 -DSAC_MT_LIB_ -DSAC_SHRAY_LIB_ -DSAC_MT_MODE=0 -DSAC_DO_RTSPEC=0 -DSAC_DO_CUDA_ALLOC=SAC_CA_system -DSAC_DO_CUDA_SYNC=1 -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -E -o /home/rhensen/param-bench/a.out.i /home/rhensen/param-bench/a.out.c
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+43288,7583209,cn132
+3-param.sac,3,6,.414676593,43520,7583209,cn132
+3-param.sac,3,7,.407843339,43540,7583209,cn132
+3-param.sac,3,8,.407144665,43496,7583209,cn132
+3-param.sac,3,9,.417173138,43500,7583209,cn132
+3-param.sac,3,10,.418728905,43260,7583209,cn132

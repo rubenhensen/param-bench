@@ -1,0 +1,21 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+14-param.sac,14,1,116.580923695,Command terminated by signal 9
+41867128,7583240,cn132
+14-param.sac,14,2,219.195178332,Command terminated by signal 9
+41863236,7583240,cn132
+14-param.sac,14,3,231.359912824,Command terminated by signal 9
+41866372,7583240,cn132
+14-param.sac,14,4,357.753144425,Command terminated by signal 9
+41868000,7583240,cn132
+14-param.sac,14,5,564.471579881,Command terminated by signal 9
+41861224,7583240,cn132
+14-param.sac,14,6,329.965279059,Command terminated by signal 9
+41865980,7583240,cn132
+14-param.sac,14,7,571.849109479,Command terminated by signal 9
+41868172,7583240,cn132
+14-param.sac,14,8,269.640792907,Command terminated by signal 9
+41866452,7583240,cn132
+14-param.sac,14,9,194.610555688,Command terminated by signal 9
+41866404,7583240,cn132
+14-param.sac,14,10,197.793937815,Command terminated by signal 9
+41866096,7583240,cn132

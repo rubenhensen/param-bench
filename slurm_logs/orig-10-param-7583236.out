@@ -1,0 +1,32 @@
+Starting benchmark for 10-param.sac with orig compiler on node $(hostname)
+Job ID: $SLURM_JOB_ID
+Run $run/10 for 10-param.sac...
+
+
+###############################################################################
+Science Cluster
+Job 7583236 for user 'rhensen'
+Finished at: Fri Nov  7 02:16:47 CET 2025
+
+Job details:
+============
+
+Name                : sac-orig-10
+User                : rhensen
+Partition           : csmpi_fpga_long
+Nodes               : cn132
+Cores               : 8
+State               : TIMEOUT,CANCELLED
+Submit              : 2025-11-07T00:13:45
+Start               : 2025-11-07T00:16:10
+End                 : 2025-11-07T02:16:46
+Reserved walltime   : 02:00:00
+Used walltime       : 02:00:36
+Used CPU time       : 01:58:56 (efficiency: 12.33%)
+% User (Computation): 98.91%
+% System (I/O)      :  1.09%
+Mem reserved        : 40G
+Max Mem used        : 41.25G (cn132)
+Max Disk Write      : 0.00  (cn132)
+Max Disk Read       : 20.48K (cn132)
+

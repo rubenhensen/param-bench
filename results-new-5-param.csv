@@ -1,0 +1,19 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+5-param.sac,5,1,.428313936,44720,7583211,cn132
+5-param.sac,5,2,.325000945,cc1: fatal error: /home/rhensen/param-bench/a.out.i: No such file or directory
+compilation terminated.
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+44964,7583211,cn132
+5-param.sac,5,3,.408346135,44796,7583211,cn132
+5-param.sac,5,4,.411276066,44528,7583211,cn132
+5-param.sac,5,5,.413283483,44868,7583211,cn132
+5-param.sac,5,6,.408102356,44892,7583211,cn132
+5-param.sac,5,7,.407268748,44536,7583211,cn132
+5-param.sac,5,8,.411697207,44928,7583211,cn132
+5-param.sac,5,9,.422709012,44868,7583211,cn132
+5-param.sac,5,10,.411823495,44664,7583211,cn132

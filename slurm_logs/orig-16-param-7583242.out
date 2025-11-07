@@ -1,0 +1,43 @@
+Starting benchmark for 16-param.sac with orig compiler on node $(hostname)
+Job ID: $SLURM_JOB_ID
+Run $run/10 for 16-param.sac...
+Run $run/10 for 16-param.sac...
+Run $run/10 for 16-param.sac...
+Run $run/10 for 16-param.sac...
+Run $run/10 for 16-param.sac...
+Run $run/10 for 16-param.sac...
+Run $run/10 for 16-param.sac...
+Run $run/10 for 16-param.sac...
+Run $run/10 for 16-param.sac...
+Run $run/10 for 16-param.sac...
+Benchmark complete for 16-param.sac with orig compiler
+Results saved to results-orig-16-param.csv
+
+
+###############################################################################
+Science Cluster
+Job 7583242 for user 'rhensen'
+Finished at: Fri Nov  7 03:46:14 CET 2025
+
+Job details:
+============
+
+Name                : sac-orig-16
+User                : rhensen
+Partition           : csmpi_fpga_long
+Nodes               : cn132
+Cores               : 8
+State               : OUT_OF_MEMORY
+Submit              : 2025-11-07T00:13:45
+Start               : 2025-11-07T03:07:41
+End                 : 2025-11-07T03:46:14
+Reserved walltime   : 02:00:00
+Used walltime       : 00:38:33
+Used CPU time       : 00:15:15 (efficiency:  4.95%)
+% User (Computation): 24.03%
+% System (I/O)      : 75.97%
+Mem reserved        : 40G
+Max Mem used        : 42.35G (cn132)
+Max Disk Write      : 61.44K (cn132)
+Max Disk Read       : 1.36M (cn132)
+

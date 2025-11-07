@@ -1,0 +1,43 @@
+Starting benchmark for 8-param.sac with orig compiler on node $(hostname)
+Job ID: $SLURM_JOB_ID
+Run $run/10 for 8-param.sac...
+Run $run/10 for 8-param.sac...
+Run $run/10 for 8-param.sac...
+Run $run/10 for 8-param.sac...
+Run $run/10 for 8-param.sac...
+Run $run/10 for 8-param.sac...
+Run $run/10 for 8-param.sac...
+Run $run/10 for 8-param.sac...
+Run $run/10 for 8-param.sac...
+Run $run/10 for 8-param.sac...
+Benchmark complete for 8-param.sac with orig compiler
+Results saved to results-orig-8-param.csv
+
+
+###############################################################################
+Science Cluster
+Job 7583234 for user 'rhensen'
+Finished at: Fri Nov  7 00:29:00 CET 2025
+
+Job details:
+============
+
+Name                : sac-orig-8
+User                : rhensen
+Partition           : csmpi_fpga_long
+Nodes               : cn132
+Cores               : 8
+State               : COMPLETED
+Submit              : 2025-11-07T00:13:45
+Start               : 2025-11-07T00:14:29
+End                 : 2025-11-07T00:29:00
+Reserved walltime   : 02:00:00
+Used walltime       : 00:14:31
+Used CPU time       : 00:14:29 (efficiency: 12.48%)
+% User (Computation): 98.66%
+% System (I/O)      :  1.34%
+Mem reserved        : 40G
+Max Mem used        : 1.10G (cn132)
+Max Disk Write      : 9.71M (cn132)
+Max Disk Read       : 75.95M (cn132)
+

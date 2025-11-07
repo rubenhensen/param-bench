@@ -1,0 +1,65 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+5-param.sac,5,1,.655445497,81340,7583231,cn132
+5-param.sac,5,2,.640178609,81272,7583231,cn132
+5-param.sac,5,3,.644993855,81180,7583231,cn132
+5-param.sac,5,4,.646317947,81184,7583231,cn132
+5-param.sac,5,5,.653262810,81276,7583231,cn132
+5-param.sac,5,6,.582529817,/home/rhensen/param-bench/a.out.c:1099:1: error: expected identifier or ‘(’ before ‘)’ token
+/home/rhensen/param-bench/a.out.c:1099:288: error: expected identifier or ‘(’ before ‘else’
+/home/rhensen/param-bench/a.out.c:1099:1466: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1099:1468: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1099:1470: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1099:1472: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1099:1585: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1099:1587: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1099:1589: error: expected identifier or ‘(’ before ‘else’
+/home/rhensen/param-bench/a.out.c:1099:1598: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1100:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1101:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1101:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1101:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1101:132: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1102:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1103:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1103:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1103:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1103:132: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1104:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1105:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1105:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1105:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1105:132: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1106:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1107:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1107:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1107:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1107:132: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1108:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1109:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1109:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1109:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1109:132: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1110:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1114:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1115:5: error: expected identifier or ‘(’ before ‘return’
+/home/rhensen/param-bench/a.out.c:1117:3: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1121:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1122:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1124:5: error: redefinition of ‘main’
+/home/rhensen/param-bench/a.out.c:1072:5: note: previous definition of ‘main’ with type ‘int(int,  char **)’
+ 1072 | int main( int __argc, char *__argv[])
+      |     ^~~~
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+81276,7583231,cn132
+5-param.sac,5,7,.645699953,81356,7583231,cn132
+5-param.sac,5,8,.645330008,81084,7583231,cn132
+5-param.sac,5,9,.653730759,81264,7583231,cn132
+5-param.sac,5,10,.641762176,81192,7583231,cn132

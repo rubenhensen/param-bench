@@ -1,0 +1,457 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+18-param.sac,18,1,.514967301,54808,7583224,cn132
+18-param.sac,18,2,.503472779,54920,7583224,cn132
+18-param.sac,18,3,.399168244,In file included from /usr/include/unistd.h:630,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:213,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/confname.h:473: error: expected ‘,’ or ‘}’ before ‘er_t’
+  473 |     _SC_LEVEL1_DCACHE_ASSOC,
+      | 
+/usr/include/x86_64-linux-gnu/bits/confname.h:473: error: expected identifier or ‘(’ before ‘)’ token
+/usr/include/x86_64-linux-gnu/bits/confname.h:473: error: expected identifier or ‘(’ before ‘}’ token
+/usr/include/x86_64-linux-gnu/bits/confname.h:473: error: expected identifier or ‘(’ before ‘else’
+/usr/include/x86_64-linux-gnu/bits/confname.h:473: error: expected identifier or ‘(’ before ‘}’ token
+/usr/include/x86_64-linux-gnu/bits/confname.h:473: error: expected identifier or ‘(’ before ‘}’ token
+/usr/include/x86_64-linux-gnu/bits/confname.h:473: error: expected identifier or ‘(’ before ‘{’ token
+/usr/include/x86_64-linux-gnu/bits/confname.h:473: error: expected identifier or ‘(’ before ‘}’ token
+/usr/include/x86_64-linux-gnu/bits/confname.h:473: error: expected identifier or ‘(’ before ‘}’ token
+/usr/include/x86_64-linux-gnu/bits/confname.h:473: error: expected identifier or ‘(’ before ‘else’
+/usr/include/x86_64-linux-gnu/bits/confname.h:473: error: expected identifier or ‘(’ before ‘}’ token
+/usr/include/x86_64-linux-gnu/bits/confname.h:474:5: error: expected identifier or ‘(’ before ‘{’ token
+  474 | #define _SC_LEVEL1_DCACHE_ASSOC         _SC_LEVEL1_DCACHE_ASSOC
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:487:5: error: expected identifier or ‘(’ before ‘{’ token
+  487 |     _SC_LEVEL3_CACHE_LINESIZE,
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:489:5: error: expected identifier or ‘(’ before ‘{’ token
+  489 |     _SC_LEVEL4_CACHE_SIZE,
+      |     ^
+In file included from /usr/include/unistd.h:630,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:213,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/confname.h:490:5: error: expected identifier or ‘(’ before ‘{’ token
+  490 | #define _SC_LEVEL4_CACHE_SIZE           _SC_LEVEL4_CACHE_SIZE
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:503:5: error: expected identifier or ‘(’ before ‘{’ token
+  503 | #define _SC_V7_ILP32_OFF32              _SC_V7_ILP32_OFF32
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:505:5: error: expected identifier or ‘(’ before ‘{’ token
+  505 | #define _SC_V7_ILP32_OFFBIG             _SC_V7_ILP32_OFFBIG
+      |     ^
+In file included from /usr/include/unistd.h:630,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:213,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/confname.h:506:5: error: expected identifier or ‘(’ before ‘{’ token
+  506 |     _SC_V7_LP64_OFF64,
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:519:5: error: expected identifier or ‘(’ before ‘{’ token
+  519 | #define _SC_TRACE_SYS_MAX               _SC_TRACE_SYS_MAX
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:521:5: error: expected identifier or ‘(’ before ‘{’ token
+  521 | #define _SC_TRACE_USER_EVENT_MAX        _SC_TRACE_USER_EVENT_MAX
+      |     ^
+In file included from /usr/include/unistd.h:630,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:213,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/confname.h:522:5: error: expected identifier or ‘(’ before ‘{’ token
+  522 | 
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:535:5: error: expected identifier or ‘(’ before ‘{’ token
+  535 | #define _SC_SIGSTKSZ                    _SC_SIGSTKSZ
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:537:5: error: expected identifier or ‘(’ before ‘{’ token
+  537 | 
+      |     ^
+In file included from /usr/include/unistd.h:630,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:213,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/confname.h:538:5: error: expected identifier or ‘(’ before ‘{’ token
+  538 | /* Values for the NAME argument to `confstr'.  */
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:551:5: error: expected identifier or ‘(’ before ‘{’ token
+  551 | #define _CS_GNU_LIBPTHREAD_VERSION      _CS_GNU_LIBPTHREAD_VERSION
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:553:5: error: expected identifier or ‘(’ before ‘{’ token
+  553 |     _CS_V5_WIDTH_RESTRICTED_ENVS,
+      |     ^
+In file included from /usr/include/unistd.h:630,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:213,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/confname.h:554:5: error: expected identifier or ‘(’ before ‘{’ token
+  554 | #define _CS_V5_WIDTH_RESTRICTED_ENVS    _CS_V5_WIDTH_RESTRICTED_ENVS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:567:5: error: expected identifier or ‘(’ before ‘{’ token
+  567 |     _CS_LFS_LINTFLAGS,
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:569:5: error: expected identifier or ‘(’ before ‘{’ token
+  569 |     _CS_LFS64_CFLAGS,
+      |     ^
+In file included from /usr/include/unistd.h:630,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:213,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/confname.h:570:5: error: expected identifier or ‘(’ before ‘{’ token
+  570 | #define _CS_LFS64_CFLAGS        _CS_LFS64_CFLAGS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:583:5: error: expected identifier or ‘(’ before ‘{’ token
+  583 | #define _CS_XBS5_ILP32_OFF32_LIBS _CS_XBS5_ILP32_OFF32_LIBS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:585:5: error: expected identifier or ‘(’ before ‘{’ token
+  585 | #define _CS_XBS5_ILP32_OFF32_LINTFLAGS _CS_XBS5_ILP32_OFF32_LINTFLAGS
+      |     ^
+In file included from /usr/include/unistd.h:630,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:213,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/confname.h:591:5: error: expected identifier or ‘(’ before ‘{’ token
+  591 | #define _CS_XBS5_ILP32_OFFBIG_LIBS _CS_XBS5_ILP32_OFFBIG_LIBS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:593:5: error: expected identifier or ‘(’ before ‘{’ token
+  593 | #define _CS_XBS5_ILP32_OFFBIG_LINTFLAGS _CS_XBS5_ILP32_OFFBIG_LINTFLAGS
+      |     ^
+In file included from /usr/include/unistd.h:630,
+                 from /usr/include/x86_64-linux-gnu/hwloc/autogen/config.h:213,
+                 from /usr/include/hwloc.h:56,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/libsac/hwloc/cpubind.h:9,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/runtime/hwloc_h/cpubind.h:42,
+                 from /home/rhensen/sacoriginal/sac2c/build_p/include/sac.h:63,
+                 from /home/rhensen/param-bench/a.out.c:274:
+/usr/include/x86_64-linux-gnu/bits/confname.h:594:5: error: expected identifier or ‘(’ before ‘{’ token
+  594 |     _CS_XBS5_LP64_OFF64_CFLAGS,
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:595:9: error: expected identifier or ‘(’ before ‘{’ token
+  595 | #define _CS_XBS5_LP64_OFF64_CFLAGS _CS_XBS5_LP64_OFF64_CFLAGS
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:596:5: error: expected identifier or ‘(’ before ‘{’ token
+  596 |     _CS_XBS5_LP64_OFF64_LDFLAGS,
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:597:9: error: expected identifier or ‘(’ before ‘{’ token
+  597 | #define _CS_XBS5_LP64_OFF64_LDFLAGS _CS_XBS5_LP64_OFF64_LDFLAGS
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:598:5: error: expected identifier or ‘(’ before ‘{’ token
+  598 |     _CS_XBS5_LP64_OFF64_LIBS,
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:599:9: error: expected identifier or ‘(’ before ‘{’ token
+  599 | #define _CS_XBS5_LP64_OFF64_LIBS _CS_XBS5_LP64_OFF64_LIBS
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:600:5: error: expected identifier or ‘(’ before ‘{’ token
+  600 |     _CS_XBS5_LP64_OFF64_LINTFLAGS,
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:601:9: error: expected identifier or ‘(’ before ‘{’ token
+  601 | #define _CS_XBS5_LP64_OFF64_LINTFLAGS _CS_XBS5_LP64_OFF64_LINTFLAGS
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:602:5: error: expected identifier or ‘(’ before ‘{’ token
+  602 |     _CS_XBS5_LPBIG_OFFBIG_CFLAGS,
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:603:9: error: expected identifier or ‘(’ before ‘{’ token
+  603 | #define _CS_XBS5_LPBIG_OFFBIG_CFLAGS _CS_XBS5_LPBIG_OFFBIG_CFLAGS
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:604:5: error: expected identifier or ‘(’ before ‘{’ token
+  604 |     _CS_XBS5_LPBIG_OFFBIG_LDFLAGS,
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:605:9: error: expected identifier or ‘(’ before ‘{’ token
+  605 | #define _CS_XBS5_LPBIG_OFFBIG_LDFLAGS _CS_XBS5_LPBIG_OFFBIG_LDFLAGS
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:606:5: error: expected identifier or ‘(’ before ‘{’ token
+  606 |     _CS_XBS5_LPBIG_OFFBIG_LIBS,
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:607:9: error: expected identifier or ‘(’ before ‘{’ token
+  607 | #define _CS_XBS5_LPBIG_OFFBIG_LIBS _CS_XBS5_LPBIG_OFFBIG_LIBS
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:608:5: error: expected identifier or ‘(’ before ‘{’ token
+  608 |     _CS_XBS5_LPBIG_OFFBIG_LINTFLAGS,
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:609:9: error: expected identifier or ‘(’ before ‘{’ token
+  609 | #define _CS_XBS5_LPBIG_OFFBIG_LINTFLAGS _CS_XBS5_LPBIG_OFFBIG_LINTFLAGS
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:610:5: error: expected identifier or ‘(’ before ‘{’ token
+  610 | 
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:611:9: error: expected identifier or ‘(’ before ‘{’ token
+  611 |     _CS_POSIX_V6_ILP32_OFF32_CFLAGS,
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:612:5: error: expected identifier or ‘(’ before ‘{’ token
+  612 | #define _CS_POSIX_V6_ILP32_OFF32_CFLAGS _CS_POSIX_V6_ILP32_OFF32_CFLAGS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:613:9: error: expected identifier or ‘(’ before ‘{’ token
+  613 |     _CS_POSIX_V6_ILP32_OFF32_LDFLAGS,
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:614:5: error: expected identifier or ‘(’ before ‘{’ token
+  614 | #define _CS_POSIX_V6_ILP32_OFF32_LDFLAGS _CS_POSIX_V6_ILP32_OFF32_LDFLAGS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:615:9: error: expected identifier or ‘(’ before ‘{’ token
+  615 |     _CS_POSIX_V6_ILP32_OFF32_LIBS,
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:616:5: error: expected identifier or ‘(’ before ‘{’ token
+  616 | #define _CS_POSIX_V6_ILP32_OFF32_LIBS _CS_POSIX_V6_ILP32_OFF32_LIBS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:617:9: error: expected identifier or ‘(’ before ‘{’ token
+  617 |     _CS_POSIX_V6_ILP32_OFF32_LINTFLAGS,
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:618:5: error: expected identifier or ‘(’ before ‘{’ token
+  618 | #define _CS_POSIX_V6_ILP32_OFF32_LINTFLAGS _CS_POSIX_V6_ILP32_OFF32_LINTFLAGS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:619:9: error: expected identifier or ‘(’ before ‘{’ token
+  619 |     _CS_POSIX_V6_ILP32_OFFBIG_CFLAGS,
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:620:5: error: expected identifier or ‘(’ before ‘{’ token
+  620 | #define _CS_POSIX_V6_ILP32_OFFBIG_CFLAGS _CS_POSIX_V6_ILP32_OFFBIG_CFLAGS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:621:9: error: expected identifier or ‘(’ before ‘{’ token
+  621 |     _CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS,
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:622:5: error: expected identifier or ‘(’ before ‘{’ token
+  622 | #define _CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS _CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:623:9: error: expected identifier or ‘(’ before ‘{’ token
+  623 |     _CS_POSIX_V6_ILP32_OFFBIG_LIBS,
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:624:5: error: expected identifier or ‘(’ before ‘{’ token
+  624 | #define _CS_POSIX_V6_ILP32_OFFBIG_LIBS _CS_POSIX_V6_ILP32_OFFBIG_LIBS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:625:9: error: expected identifier or ‘(’ before ‘{’ token
+  625 |     _CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS,
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:626:5: error: expected identifier or ‘(’ before ‘{’ token
+  626 | #define _CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS _CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:627:9: error: expected identifier or ‘(’ before ‘{’ token
+  627 |     _CS_POSIX_V6_LP64_OFF64_CFLAGS,
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:628:5: error: expected identifier or ‘(’ before ‘{’ token
+  628 | #define _CS_POSIX_V6_LP64_OFF64_CFLAGS _CS_POSIX_V6_LP64_OFF64_CFLAGS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:629:9: error: expected identifier or ‘(’ before ‘{’ token
+  629 |     _CS_POSIX_V6_LP64_OFF64_LDFLAGS,
+      |         ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:630:5: error: expected identifier or ‘(’ before ‘{’ token
+  630 | #define _CS_POSIX_V6_LP64_OFF64_LDFLAGS _CS_POSIX_V6_LP64_OFF64_LDFLAGS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:634:5: error: expected identifier or ‘(’ before ‘{’ token
+  634 | #define _CS_POSIX_V6_LP64_OFF64_LINTFLAGS _CS_POSIX_V6_LP64_OFF64_LINTFLAGS
+      |     ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:635:5: error: expected identifier or ‘(’ before ‘return’
+  635 |     _CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS,
+      |     ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/confname.h:637:3: error: expected identifier or ‘(’ before ‘}’ token
+  637 |     _CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS,
+      |   ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:641:1: error: expected identifier or ‘(’ before ‘}’ token
+  641 |     _CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS,
+      | ^
+/usr/include/x86_64-linux-gnu/bits/confname.h:642:1: error: expected identifier or ‘(’ before ‘}’ token
+  642 | #define _CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS _CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS
+      | ^
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+54988,7583224,cn132
+18-param.sac,18,4,.497094341,54644,7583224,cn132
+18-param.sac,18,5,.498399796,54844,7583224,cn132
+18-param.sac,18,6,.380707629,In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:98:171: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘/’ token
+   98 | CREATE_FOR_BUILTIN (GENWRAPS)
+      |                                                                                                                                                                           ^
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:98:191: error: missing terminating " character [-Werror]
+   98 | CREATE_FOR_BUILTIN (GENWRAPS)
+      |                                                                                                                                                                                               ^
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:98:191: error: missing terminating " character
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:99:3: error: expected identifier or ‘(’ before ‘}’ token
+   99 | 
+      |   ^
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:99:5: error: expected identifier or ‘(’ before ‘}’ token
+   99 | 
+      |     ^
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:99:6: error: expected identifier or ‘(’ before ‘,’ token
+   99 | 
+      |      ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:46: error: expected identifier or ‘(’ before ‘}’ token
+  312 | SAC_HM_DEFINE()
+      |                                              ^
+/home/rhensen/param-bench/a.out.c:312:48: error: expected identifier or ‘(’ before ‘}’ token
+  312 | SAC_HM_DEFINE()
+      |                                                ^
+/home/rhensen/param-bench/a.out.c:312:49: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+  312 | SAC_HM_DEFINE()
+      |                                                 ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:778:6: error: redefinition of ‘SACwf__MAIN__main’
+  778 | SAC_ND_DEF_FUN_BEGIN2( SACwf__MAIN__main, void,  SAC_ND_PARAM_out( (SAC_arg_1, (SCL, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (INT, ))))))))), int))
+      |      ^~~~~~~~~~~~~~~~~
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:778:6: note: previous definition of ‘SACwf__MAIN__main’ with type ‘void(int *)’
+  778 | SAC_ND_DEF_FUN_BEGIN2( SACwf__MAIN__main, void,  SAC_ND_PARAM_out( (SAC_arg_1, (SCL, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (INT, ))))))))), int))
+      |      ^~~~~~~~~~~~~~~~~
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:824:6: error: redefinition of ‘SACf__MAIN__main’
+  824 | SAC_ND_DEF_FUN_BEGIN2( SACf__MAIN__main, void,  SAC_ND_PARAM_out( (SAC_arg_1, (SCL, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (INT, ))))))))), int))
+      |      ^~~~~~~~~~~~~~~~
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:824:6: note: previous definition of ‘SACf__MAIN__main’ with type ‘void(int *)’
+  824 | SAC_ND_DEF_FUN_BEGIN2( SACf__MAIN__main, void,  SAC_ND_PARAM_out( (SAC_arg_1, (SCL, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (INT, ))))))))), int))
+      |      ^~~~~~~~~~~~~~~~
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:846:5: error: conflicting types for ‘main’; have ‘int(int,  char **)’
+  846 | int main( int __argc, char *__argv[])
+      |     ^~~~
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:846:5: note: previous declaration of ‘main’ with type ‘int(int,  char *, intptr_t *)’ {aka ‘int(int,  char *, long int *)’}
+  846 | int main( int __argc, char *__argv[])
+      |     ^~~~
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+54956,7583224,cn132
+18-param.sac,18,7,.501325970,54644,7583224,cn132
+18-param.sac,18,8,.498673991,54644,7583224,cn132
+18-param.sac,18,9,.410211307,/home/rhensen/param-bench/a.out.c:873:4: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘)’ token
+/home/rhensen/param-bench/a.out.c:873:540: error: ‘_real_size_1’ undeclared here (not in a function); did you mean ‘_real_size_2’?
+/home/rhensen/param-bench/a.out.c:873:840: error: initializer element is not constant
+/home/rhensen/param-bench/a.out.c:873:1134: error: initializer element is not constant
+/home/rhensen/param-bench/a.out.c:873:1195: error: expected identifier or ‘(’ before ‘if’
+/home/rhensen/param-bench/a.out.c:873:1431: error: expected identifier or ‘(’ before ‘else’
+/home/rhensen/param-bench/a.out.c:873:1660: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873:1662: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873:1664: error: data definition has no type or storage class [-Werror]
+/home/rhensen/param-bench/a.out.c:873:1664: error: type defaults to ‘int’ in declaration of ‘SACp_emal_3393__flat_94__desc’ [-Werror=implicit-int]
+/home/rhensen/param-bench/a.out.c:873:1746: error: ‘SACp_emal_3393__flat_94’ undeclared here (not in a function); did you mean ‘SACp_emal_3393__flat_94__desc’?
+/home/rhensen/param-bench/a.out.c:873:1771: error: ‘SACp_emal_3393__flat_94__sz’ undeclared here (not in a function); did you mean ‘SACp_emal_3393__flat_94__desc’?
+/home/rhensen/param-bench/a.out.c:873:1843: error: ‘SACp_emal_3393__flat_94__dim’ undeclared here (not in a function); did you mean ‘SACp_emal_3393__flat_94__desc’?
+/home/rhensen/param-bench/a.out.c:873:1899: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873:1901: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873:1903: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:877:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:878:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:879:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:881:5: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:885:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:890:117: error: expected declaration specifiers or ‘...’ before ‘&’ token
+/home/rhensen/param-bench/a.out.c:890:128: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:153: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:184: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:209: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:240: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:265: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:296: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:321: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:352: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:377: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:408: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:433: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:464: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:489: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:520: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:545: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:576: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:601: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:632: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:657: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:688: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:713: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:744: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:769: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:800: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:825: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:856: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:881: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:912: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:937: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:968: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:993: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:1024: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:1049: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:1080: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:1105: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:1136: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:1161: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:895:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:900:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:901:5: error: expected identifier or ‘(’ before ‘return’
+/home/rhensen/param-bench/a.out.c:903:3: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:907:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:908:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1520:5: error: redefinition of ‘main’
+/home/rhensen/param-bench/a.out.c:846:5: note: previous definition of ‘main’ with type ‘int(int,  char **)’
+  846 | int main( int __argc, char *__argv[])
+      |     ^~~~
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+54660,7583224,cn132
+18-param.sac,18,10,.505524688,54748,7583224,cn132

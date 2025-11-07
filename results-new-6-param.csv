@@ -1,0 +1,23 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+6-param.sac,6,1,.421385512,45260,7583212,cn132
+6-param.sac,6,2,.435444659,45424,7583212,cn132
+6-param.sac,6,3,.432158447,45616,7583212,cn132
+6-param.sac,6,4,.427113988,45520,7583212,cn132
+6-param.sac,6,5,.422982506,45260,7583212,cn132
+6-param.sac,6,6,.435329882,45672,7583212,cn132
+6-param.sac,6,7,.424432703,45604,7583212,cn132
+6-param.sac,6,8,.319928563,/home/rhensen/param-bench/a.out.c:1115:5: error: "/*" within comment [-Werror=comment]
+ 1115 |     /*
+      |      
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc  -I. -I/usr/include -I/usr/local/cuda/include  -I/usr/local/include/sac2c/2.0.0-Tintigny-276-g77433-dirty/release -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -I/home/rhensen/sac2c/build_p/runtime_build/src/runtime_libraries-build/include -I/home/rhensen/sac2c/build_p/include -I/home/rhensen/sac2c/include -DSAC_TARGET_default_sbi -DSAC_TARGET_STRING=\"default_sbi\" -DSAC_MODEXT_STRING=\".so\" -DSAC_TARGET_ENV_STRING=\"host\" -DSAC_SBI_STRING=\"seq\" -DSAC_RC_METHOD=SAC_RCM_local -DSAC_BACKEND_C99 -DSAC_MT_LIB_ -DSAC_SHRAY_LIB_ -DSAC_MT_MODE=0 -DSAC_DO_RTSPEC=0 -DSAC_DO_CUDA_ALLOC=SAC_CA_system -DSAC_DO_CUDA_SYNC=1 -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -E -o /home/rhensen/param-bench/a.out.i /home/rhensen/param-bench/a.out.c
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 206
+45240,7583212,cn132
+6-param.sac,6,9,.437433579,45244,7583212,cn132
+6-param.sac,6,10,.430907994,45424,7583212,cn132

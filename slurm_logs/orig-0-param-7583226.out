@@ -1,0 +1,43 @@
+Starting benchmark for 0-param.sac with orig compiler on node $(hostname)
+Job ID: $SLURM_JOB_ID
+Run $run/10 for 0-param.sac...
+Run $run/10 for 0-param.sac...
+Run $run/10 for 0-param.sac...
+Run $run/10 for 0-param.sac...
+Run $run/10 for 0-param.sac...
+Run $run/10 for 0-param.sac...
+Run $run/10 for 0-param.sac...
+Run $run/10 for 0-param.sac...
+Run $run/10 for 0-param.sac...
+Run $run/10 for 0-param.sac...
+Benchmark complete for 0-param.sac with orig compiler
+Results saved to results-orig-0-param.csv
+
+
+###############################################################################
+Science Cluster
+Job 7583226 for user 'rhensen'
+Finished at: Fri Nov  7 00:14:17 CET 2025
+
+Job details:
+============
+
+Name                : sac-orig-0
+User                : rhensen
+Partition           : csmpi_fpga_long
+Nodes               : cn132
+Cores               : 8
+State               : COMPLETED
+Submit              : 2025-11-07T00:13:44
+Start               : 2025-11-07T00:14:13
+End                 : 2025-11-07T00:14:17
+Reserved walltime   : 02:00:00
+Used walltime       : 00:00:04
+Used CPU time       : 00:00:03 (efficiency:  9.98%)
+% User (Computation): 82.49%
+% System (I/O)      : 17.48%
+Mem reserved        : 40G
+Max Mem used        : 96.00K (cn132)
+Max Disk Write      : 0.00  (cn132)
+Max Disk Read       : 0.00  (cn132)
+

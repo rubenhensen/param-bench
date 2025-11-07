@@ -1,0 +1,341 @@
+filename,param_count,run,compilation_time,max_memory_kb,job_id,node
+0-param.sac,0,1,.406533568,38944,7583226,cn132
+0-param.sac,0,2,.310511475,/home/rhensen/param-bench/a.out.c:873:1: error: null character(s) ignored [-Werror]
+/home/rhensen/param-bench/a.out.c:873: error: unknown type name ‘er_t’
+/home/rhensen/param-bench/a.out.c:873: error: expected identifier or ‘(’ before ‘)’ token
+/home/rhensen/param-bench/a.out.c:873: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873: error: expected identifier or ‘(’ before ‘else’
+/home/rhensen/param-bench/a.out.c:873: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:873: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873: error: expected identifier or ‘(’ before ‘else’
+/home/rhensen/param-bench/a.out.c:873: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:874:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:886:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:887:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:889:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:890:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:902:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:903:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:905:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:906:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:918:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:919:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:921:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:922:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:934:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:935:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:937:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:938:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:950:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:951:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:953:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:954:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:966:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:967:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:969:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:970:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:982:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:983:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:985:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:990:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:991:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:993:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:994:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:995:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:995:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:995:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:995:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:996:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:997:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:997:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:997:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:997:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:998:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:999:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:999:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:999:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:999:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1000:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1001:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1001:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1001:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1001:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1002:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1003:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1003:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1003:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1003:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1004:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1005:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1005:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1005:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1005:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1006:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1007:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1007:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1007:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1007:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1008:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1009:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1009:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1009:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1009:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1010:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1011:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1011:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1011:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1011:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1012:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1013:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1013:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1013:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1013:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1014:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1015:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1015:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1015:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1015:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1016:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1017:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1017:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1017:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1017:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1018:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1019:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1019:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1019:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1019:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1020:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1021:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1021:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1021:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1021:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1022:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1023:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1023:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1023:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1023:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1024:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1025:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1025:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1025:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1025:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1026:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1027:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1027:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1027:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1027:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1028:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1029:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1029:7: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1029:9: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1029:123: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:1030:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1034:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:1035:5: error: expected identifier or ‘(’ before ‘return’
+/home/rhensen/param-bench/a.out.c:1037:3: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1041:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1042:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1044:5: error: redefinition of ‘main’
+/home/rhensen/param-bench/a.out.c:846:5: note: previous definition of ‘main’ with type ‘int(int,  char **)’
+  846 | int main( int __argc, char *__argv[])
+      |     ^~~~
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+39116,7583226,cn132
+0-param.sac,0,3,.306132358,/home/rhensen/param-bench/a.out.c:437:53: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘SACl_shp__desc’
+  437 | SAC_ND_DECL_FUN2( SACwf_sacprelude_p__sel__i_S__ub_S, void,  SAC_ND_PARAM_out( (SAC_arg_1, (AUD, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (UBY, ))))))))), ubyte), SAC_ND_PARAM_in( (SACl_idx, (AUD, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (INT, ))))))))), int), SAC_ND_PARAM_in( (SACl_arr, (AUD, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (UBY, ))))))))), ubyte));
+      |                                                     ^~~~~~~~~~~~~~
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+39260,7583226,cn132
+0-param.sac,0,4,.355082475,39252,7583226,cn132
+0-param.sac,0,5,.358125329,38944,7583226,cn132
+0-param.sac,0,6,.305888819,In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:98:171: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘/’ token
+   98 | CREATE_FOR_BUILTIN (GENWRAPS)
+      |                                                                                                                                                                           ^
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:98:191: error: missing terminating " character [-Werror]
+   98 | CREATE_FOR_BUILTIN (GENWRAPS)
+      |                                                                                                                                                                                               ^
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:98:191: error: missing terminating " character
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:99:3: error: expected identifier or ‘(’ before ‘}’ token
+   99 | 
+      |   ^
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:99:5: error: expected identifier or ‘(’ before ‘}’ token
+   99 | 
+      |     ^
+/home/rhensen/sacoriginal/sac2c/build_p/include/libsac/interface/sacarg.h:99:6: error: expected identifier or ‘(’ before ‘,’ token
+   99 | 
+      |      ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:45: error: expected identifier or ‘(’ before ‘,’ token
+  312 | SAC_HM_DEFINE()
+      |                                             ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:312:46: error: expected identifier or ‘(’ before ‘}’ token
+  312 | SAC_HM_DEFINE()
+      |                                              ^
+/home/rhensen/param-bench/a.out.c:312:48: error: expected identifier or ‘(’ before ‘}’ token
+  312 | SAC_HM_DEFINE()
+      |                                                ^
+/home/rhensen/param-bench/a.out.c:312:49: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+  312 | SAC_HM_DEFINE()
+      |                                                 ^
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:778:6: error: redefinition of ‘SACwf__MAIN__main’
+  778 | SAC_ND_DEF_FUN_BEGIN2( SACwf__MAIN__main, void,  SAC_ND_PARAM_out( (SAC_arg_1, (SCL, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (INT, ))))))))), int))
+      |      ^~~~~~~~~~~~~~~~~
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:778:6: note: previous definition of ‘SACwf__MAIN__main’ with type ‘void(int *)’
+  778 | SAC_ND_DEF_FUN_BEGIN2( SACwf__MAIN__main, void,  SAC_ND_PARAM_out( (SAC_arg_1, (SCL, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (INT, ))))))))), int))
+      |      ^~~~~~~~~~~~~~~~~
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:824:6: error: redefinition of ‘SACf__MAIN__main’
+  824 | SAC_ND_DEF_FUN_BEGIN2( SACf__MAIN__main, void,  SAC_ND_PARAM_out( (SAC_arg_1, (SCL, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (INT, ))))))))), int))
+      |      ^~~~~~~~~~~~~~~~
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:824:6: note: previous definition of ‘SACf__MAIN__main’ with type ‘void(int *)’
+  824 | SAC_ND_DEF_FUN_BEGIN2( SACf__MAIN__main, void,  SAC_ND_PARAM_out( (SAC_arg_1, (SCL, (NHD, (NUQ, (INT, (GLO, (FPM, (NOT, (INT, ))))))))), int))
+      |      ^~~~~~~~~~~~~~~~
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:846:5: error: conflicting types for ‘main’; have ‘int(int,  char **)’
+  846 | int main( int __argc, char *__argv[])
+      |     ^~~~
+In file included from /home/rhensen/param-bench/a.out.c:304:
+/home/rhensen/param-bench/a.out.c:846:5: note: previous declaration of ‘main’ with type ‘int(int,  char *, intptr_t *)’ {aka ‘int(int,  char *, long int *)’}
+  846 | int main( int __argc, char *__argv[])
+      |     ^~~~
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+39200,7583226,cn132
+0-param.sac,0,7,.358605543,39064,7583226,cn132
+0-param.sac,0,8,.355002455,39260,7583226,cn132
+0-param.sac,0,9,.371821273,39044,7583226,cn132
+0-param.sac,0,10,.314365214,/home/rhensen/param-bench/a.out.c:873:4: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘)’ token
+/home/rhensen/param-bench/a.out.c:873:540: error: ‘_real_size_1’ undeclared here (not in a function); did you mean ‘_real_size_2’?
+/home/rhensen/param-bench/a.out.c:873:840: error: initializer element is not constant
+/home/rhensen/param-bench/a.out.c:873:1134: error: initializer element is not constant
+/home/rhensen/param-bench/a.out.c:873:1195: error: expected identifier or ‘(’ before ‘if’
+/home/rhensen/param-bench/a.out.c:873:1431: error: expected identifier or ‘(’ before ‘else’
+/home/rhensen/param-bench/a.out.c:873:1660: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873:1662: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873:1664: error: data definition has no type or storage class [-Werror]
+/home/rhensen/param-bench/a.out.c:873:1664: error: type defaults to ‘int’ in declaration of ‘SACp_emal_3393__flat_94__desc’ [-Werror=implicit-int]
+/home/rhensen/param-bench/a.out.c:873:1746: error: ‘SACp_emal_3393__flat_94’ undeclared here (not in a function); did you mean ‘SACp_emal_3393__flat_94__desc’?
+/home/rhensen/param-bench/a.out.c:873:1771: error: ‘SACp_emal_3393__flat_94__sz’ undeclared here (not in a function); did you mean ‘SACp_emal_3393__flat_94__desc’?
+/home/rhensen/param-bench/a.out.c:873:1843: error: ‘SACp_emal_3393__flat_94__dim’ undeclared here (not in a function); did you mean ‘SACp_emal_3393__flat_94__desc’?
+/home/rhensen/param-bench/a.out.c:873:1899: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873:1901: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:873:1903: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:877:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:878:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:879:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:881:5: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:885:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:890:117: error: expected declaration specifiers or ‘...’ before ‘&’ token
+/home/rhensen/param-bench/a.out.c:890:128: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:153: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:184: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:209: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:240: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:265: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:296: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:321: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:352: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:377: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:408: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:433: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:464: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:489: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:520: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:545: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:576: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:601: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:632: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:657: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:688: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:713: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:744: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:769: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:800: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:825: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:856: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:881: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:912: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:937: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:968: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:993: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:1024: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:1049: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:1080: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:1105: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:890:1136: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94’
+/home/rhensen/param-bench/a.out.c:890:1161: error: expected declaration specifiers or ‘...’ before ‘SACp_emal_3393__flat_94__desc’
+/home/rhensen/param-bench/a.out.c:895:5: error: ISO C does not allow extra ‘;’ outside of a function [-Werror=pedantic]
+/home/rhensen/param-bench/a.out.c:900:5: error: expected identifier or ‘(’ before ‘{’ token
+/home/rhensen/param-bench/a.out.c:901:5: error: expected identifier or ‘(’ before ‘return’
+/home/rhensen/param-bench/a.out.c:903:3: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:907:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:908:1: error: expected identifier or ‘(’ before ‘}’ token
+/home/rhensen/param-bench/a.out.c:1520:5: error: redefinition of ‘main’
+/home/rhensen/param-bench/a.out.c:846:5: note: previous definition of ‘main’ with type ‘int(int,  char **)’
+  846 | int main( int __argc, char *__argv[])
+      |     ^~~~
+cc1: note: unrecognized command-line option ‘-Wno-unreachable-code-return’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-use-after-free’ may have been intended to silence earlier diagnostics
+cc1: all warnings being treated as errors
+Abort:
+  System failed to execute shell command
+  /usr/bin/cc -O3 -ffast-math  -march=native -mtune=native  -pedantic -g -fPIC -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -D_SVID_SOURCE -D_BSD_SOURCE  -Wall -Wextra -Werror -Wno-free-nonheap-object -Wno-use-after-free -Wstrict-prototypes -Wno-unused-parameter -Wno-tautological-compare -Wno-unreachable-code-return -Wno-sign-compare -Wno-array-bounds -Wno-unused-but-set-variable  -Wno-unused-function -Wno-strict-overflow -Wimplicit-fallthrough=3 -Wno-format-truncation -pedantic -std=gnu99 -pedantic -Wno-unused -fno-builtin-malloc  -c -o /home/rhensen/param-bench/a.out.o /home/rhensen/param-bench/a.out.i
+  with exit code 1
+Compilation failed while Creating binary code.
+Command exited with non-zero status 204
+39116,7583226,cn132
