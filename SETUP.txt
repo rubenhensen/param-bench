@@ -1,0 +1,238 @@
+Parameter Scalability Benchmark — Setup instructions for a fresh SLURM account
+==============================================================================
+
+This benchmark measures sac2c compilation time and peak memory across 20
+input files (0-param.sac through 19-param.sac), validating the
+"exponential-to-linear" memory claim in thesis §47 and feeding the
+appendix tables at §70/§71.
+
+Final layout on the cluster will be:
+
+  /home/rhensen/
+  ├── sacoriginal/sac2c/        # "orig" compiler (sac-group/sac2c, develop)
+  │   └── build_p/sac2c_p
+  ├── sac2c/                    # "new" compiler (rhensen/sac2c, progressive-dispatch-clean)
+  │   └── build_p/sac2c_p
+  ├── Stdlib/                   # SaC Standard Library source
+  │   ├── build-new/lib/        # Stdlib compiled with the new compiler  (make stdlibs)
+  │   └── build-orig/lib/       # Stdlib compiled with the orig compiler (make stdlibs)
+  ├── stdlib-bench-sac/         # the OTHER benchmark (independent)
+  └── param-bench/              # THIS repo
+
+
+Step 0 — Prerequisites
+----------------------
+
+If you have already set up stdlib-bench-sac, Steps 0/1/2 are already
+done. Jump straight to Step 3.
+
+If you haven't, do the full Steps 0/1/2 from
+stdlib-bench-sac/SETUP.txt first (SSH keys, clone the three source
+repos, sbatch-build both sac2c compilers). Then come back here for
+Step 3.
+
+
+Step 1 — Clone the param-bench repo
+-----------------------------------
+
+On the login node:
+
+    cd ~
+    git clone git@github.com:rubenhensen/param-bench.git
+
+Then sanity-check the paths config.mk expects:
+
+    cd ~/param-bench
+    make print-config
+
+Every path it prints should exist:
+
+    ls -d ~/sacoriginal/sac2c/build_p/sac2c_p \
+          ~/sac2c/build_p/sac2c_p \
+          ~/Stdlib
+
+
+Step 2 — (one-time) Build the SaC Stdlib once per compiler
+----------------------------------------------------------
+
+This benchmark calls sac2c on small files that `use Array: all;`, which
+means each compiler needs a pre-compiled Stdlib to link against. The
+two builds go to ~/Stdlib/build-new/lib and ~/Stdlib/build-orig/lib.
+You only need to do this once per cluster account (and again whenever
+either sac2c compiler is rebuilt with material changes).
+
+`make stdlibs` submits a SLURM job that does both builds sequentially
+in one allocation:
+
+    cd ~/param-bench
+    make stdlibs
+
+Watch with:
+
+    squeue -u $USER
+    tail -f build-stdlibs-<jobid>.out
+
+When the job is COMPLETED, verify:
+
+    ls ~/Stdlib/build-new/lib  ~/Stdlib/build-orig/lib
+
+Each should contain the compiled prelude/Stdlib .so/.tree files. If
+either is missing, look at build-stdlibs-<jobid>.err. Most common
+failure: the corresponding sac2c_p doesn't exist — re-run Step 2 from
+stdlib-bench-sac/SETUP.txt to rebuild the compiler.
+
+
+Step 3 — Smoke-test the benchmark with N=2
+------------------------------------------
+
+Before burning hours of cluster time, run a tiny end-to-end smoke test
+to catch any path/permissions issue early.
+
+    cd ~/param-bench
+    make print-config              # confirms resolved paths
+    make venv                      # one-time Python env for the analysis step
+
+Edit config.mk temporarily:
+
+    RUNS_PER_PARAM    := 2
+    PARAM_MAX         := 5         # only test the cheap cases for smoke
+    MAX_RETRIES       := 1
+
+Then run the whole pipeline:
+
+    make            # = make run; jobs → submit → wait → retry → collect → report
+
+This should take ~5 min wall clock (12 tasks of 2 fast compilations
+each, in parallel across the array). When it finishes, check:
+
+    cat summary/report.md
+    ls results/                    # should contain 12 .json files
+    jq '.task_status, .runs[0].status, .runs[0].peak_rss_kb, .sac2c_commit' \
+       results/param-new-0.json
+
+The first three should be "SUCCESS", "SUCCESS", and a non-null number;
+sac2c_commit must be a real hash. If any field is empty, fix it before
+doing the full run.
+
+
+Step 4 — Full rerun (the real benchmark)
+----------------------------------------
+
+Archive the smoke-test artefacts and edit the config back to real
+values:
+
+    make clean                     # moves the test run to archive/<timestamp>/
+
+In config.mk:
+
+    RUNS_PER_PARAM    := 10
+    PARAM_MAX         := 19
+    MAX_RETRIES       := 2
+
+Kick off the full run inside tmux so login-shell time caps can't kill
+the orchestrator:
+
+    tmux new -s param-bench
+    make
+    # Ctrl-b d to detach; tmux attach -t param-bench to peek
+
+Wall-clock estimate: ~5–6 hours on a free cluster. Worst case with the
+short-circuit logic biting at high param counts: ~8 hours. Well under
+cncz's 24 h partition cap.
+
+Per-compilation TIMEOUT or OOM at high param counts is the EXPECTED
+outcome for the orig compiler — it's what proves the
+exponential-memory claim. Those are recorded as TIMEOUT / OOM in the
+JSON; they are NOT retried.
+
+
+Step 5 — Collect the deliverables
+---------------------------------
+
+When `make` returns:
+
+    ls summary/
+    # combined_results.csv   — one row per individual compilation (~400 rows)
+    # all_runs.json          — full per-task records
+    # metadata.json          — reproducibility footer (compiler commits, hardware, etc.)
+    # analysis.json          — per-(compiler, param) stats
+    # report.md              — human-readable
+    # thesis_snippet.typ     — two Typst figures ready to paste into source.md
+
+    cat summary/report.md
+    cat summary/thesis_snippet.typ
+
+Copy summary/ back to your laptop:
+
+    scp -r rhensen@lilo.science.ru.nl:~/param-bench/summary ./param-bench-summary
+
+The Typst snippet produces both appendix tables (compile time + peak
+RSS), with captions already prefilled with compiler commits, Stdlib
+commit, node name, N, the per-compilation timeout, and the
+ulimit -v cap. Paste them where the existing <compilation-time-table>
+and <memory-usage-table> figures live in source.md (around L1704 and
+L1738).
+
+
+Running concurrently with stdlib-bench-sac
+------------------------------------------
+
+The two benchmarks are isolated and can run at the same time:
+
+  * Different scratch subtrees: /scratch/$USER/stdlib_bench_* vs
+    /scratch/$USER/param_bench_*. No filesystem collision.
+  * Per-task $HOME for each task, so no ~/.sac2crc race.
+  * Both READ the same compiler binaries and the same ~/Stdlib source.
+    READ-only sharing is safe.
+  * ~/Stdlib/build-{new,orig}/ is WRITTEN only by `make stdlibs` and
+    READ by param-bench tasks. stdlib-bench tasks build into /scratch
+    and never touch ~/Stdlib/build-*.
+  * Independent job_ids.txt, results/, summary/, tmux sessions.
+
+They will share cncz capacity (3 nodes), so SLURM queues both and runs
+whatever fits. If you want to be polite to other cluster users, set
+
+    SLURM_ARRAY_CONCURRENCY := 2
+
+in param-bench's config.mk so the combined concurrency cap is
+8 (stdlib) + 4 (param) = 12 instead of 16. Not required.
+
+Use a different tmux session name for each (e.g. `bench` vs
+`param-bench`) so `tmux ls` lets you tell them apart at a glance.
+
+
+Future reruns
+-------------
+
+Whenever you want to redo this with newer compiler commits:
+
+    ssh rhensen@lilo.science.ru.nl
+    cd ~/sacoriginal/sac2c && git pull && git submodule update --init --recursive
+    cd ~/sac2c             && git pull && git submodule update --init --recursive
+    cd ~/Stdlib            && git pull && git submodule update --init --recursive
+    # Rebuild the sac2c compilers (Step 2 in stdlib-bench-sac/SETUP.txt)
+    cd ~/param-bench       && git pull
+    make stdlibs           # rebuild Stdlib with each new compiler
+    # wait for build-stdlibs to COMPLETE, then:
+    make clean
+    tmux new -s param-bench
+    make
+
+
+Notes
+-----
+
+* The 14 G SLURM memory cap (config.mk: SLURM_MEM) matches the
+  per-compilation virtual-memory cap (RUN_VMEM_LIMIT_KB = 14000000).
+  This is intentional: hitting the cap surfaces as an OOM at the
+  individual compilation level rather than killing the whole task.
+
+* Short-circuit logic (SHORTCIRCUIT_AFTER = 2) means a task gives up
+  after two consecutive TIMEOUT/OOM rather than wasting hours hitting
+  the same wall. This is what keeps the worst-case wall clock down to
+  ~8 hours instead of ~50.
+
+* MAX_RETRIES applies only to task-level failures (task_status =
+  ERROR — sac2c missing, source missing, SLURM killed the task).
+  Per-compilation failures inside a task are recorded as-is and not
+  retried — they are the experimental signal we want to capture.
