@@ -63,6 +63,25 @@ SLURM_TIMELIMIT   := 06:00:00
 # polite. Empty = no cap.
 SLURM_ARRAY_CONCURRENCY := 4
 
+# Restrict which compute nodes the benchmark runs on. CRUCIAL for benchmark
+# validity: cncz nodes differ in CPU generation and load, and mixing them
+# produces 2× differences in compile time that swamp the signal.
+#
+# Use EXACTLY ONE of:
+#   SLURM_NODELIST    := cn99            # pin to ONE specific node — best for validity
+#   SLURM_EXCLUDE     := cn58            # exclude known-slow nodes — keeps parallelism
+# Leave both empty to let SLURM decide (NOT recommended for benchmark runs).
+#
+# DEFAULT: pin to cn99. Empirically (see thesis evaluation), cn58 is ~2× slower
+# than cn00/cn99 on the same workload — mixing produces noise that swamps the
+# signal. Pinning to one node is the only honest way to compare compile times.
+#
+# Discover node specs with:
+#   sinfo -N -o "%N %c %m %f"
+#   scontrol show node cn58 | grep -E 'CPU|Memory|Active'
+SLURM_NODELIST     := cn99
+SLURM_EXCLUDE      :=
+
 # Per-task scratch root for builds + isolated $HOME (avoids ~/.sac2crc race).
 TEMP_ROOT_PREFERRED := /scratch
 TEMP_ROOT_FALLBACK  := $$HOME

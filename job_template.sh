@@ -9,6 +9,7 @@
 #SBATCH --account=__ACCOUNT__
 #SBATCH --partition=__PARTITION__
 #SBATCH --array=__ARRAY_SPEC__
+__SLURM_NODE_DIRECTIVE__
 
 # =============================================================================
 # Parameter Scalability Benchmark — SLURM array task

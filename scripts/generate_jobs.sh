@@ -5,7 +5,7 @@
 #   COMPILERS, PARAM_MIN, PARAM_MAX, RUNS_PER_PARAM,
 #   RUN_TIMEOUT_SEC, RUN_VMEM_LIMIT_KB, SHORTCIRCUIT_AFTER,
 #   SLURM_TIMELIMIT, SLURM_CPUS, SLURM_MEM, SLURM_ACCOUNT, SLURM_PARTITION,
-#   SLURM_ARRAY_CONCURRENCY,
+#   SLURM_ARRAY_CONCURRENCY, SLURM_NODELIST, SLURM_EXCLUDE,
 #   SAC2C_NEW_SLURM, SAC2C_ORIG_SLURM, SAC2C_NEW_DIR_SLURM, SAC2C_ORIG_DIR_SLURM,
 #   SAC2C_NEW_SRC_SLURM, SAC2C_ORIG_SRC_SLURM,
 #   STDLIB_SRC_SLURM, STDLIB_BUILD_NEW, STDLIB_BUILD_ORIG,
@@ -24,6 +24,19 @@ mkdir -p jobs
 ARRAY_SPEC="${PARAM_MIN}-${PARAM_MAX}"
 if [[ -n "${SLURM_ARRAY_CONCURRENCY:-}" ]]; then
   ARRAY_SPEC="${ARRAY_SPEC}%${SLURM_ARRAY_CONCURRENCY}"
+fi
+
+# Node constraint: SLURM_NODELIST wins (pin to specific nodes), else
+# SLURM_EXCLUDE (exclude specific nodes), else nothing.
+if [[ -n "${SLURM_NODELIST:-}" ]]; then
+  NODE_DIRECTIVE="#SBATCH --nodelist=${SLURM_NODELIST}"
+  echo "constraining tasks to node(s): ${SLURM_NODELIST}"
+elif [[ -n "${SLURM_EXCLUDE:-}" ]]; then
+  NODE_DIRECTIVE="#SBATCH --exclude=${SLURM_EXCLUDE}"
+  echo "excluding node(s): ${SLURM_EXCLUDE}"
+else
+  NODE_DIRECTIVE="# (no node constraint — SLURM may pick any node in the partition)"
+  echo "WARNING: no node constraint set; mixed CPU generations will add noise"
 fi
 
 for compiler in ${COMPILERS}; do
@@ -66,6 +79,7 @@ for compiler in ${COMPILERS}; do
       -e "s|__MEM__|${SLURM_MEM}|g" \
       -e "s|__ACCOUNT__|${SLURM_ACCOUNT}|g" \
       -e "s|__PARTITION__|${SLURM_PARTITION}|g" \
+      -e "s|__SLURM_NODE_DIRECTIVE__|${NODE_DIRECTIVE}|g" \
       -e "s|__TEMP_ROOT_PREFERRED__|${TEMP_ROOT_PREFERRED:-/scratch}|g" \
       -e "s|__TEMP_ROOT_FALLBACK__|${TEMP_ROOT_FALLBACK:-\$HOME}|g" \
       job_template.sh > "${OUT}"
