@@ -1,184 +1,199 @@
-# SAC Parameter Count Compilation Benchmark
+# Parameter Scalability Benchmark
 
-Measures and compares SAC compilation time and memory usage as a function of parameter count (0-19 parameters) between two compiler versions.
+Measures `sac2c` compilation time and peak memory as a function of the
+number of function parameters (default 0–19) for two compiler versions,
+captures the reproducibility metadata the thesis appendix needs, and
+emits paste-ready Typst tables.
 
-## Quick Start
+This is the benchmark that validates the *"exponential to linear"* memory
+claim in §47 of the thesis and feeds the appendix tables at §70 and §71.
 
-### Local Execution
+## One-command run
+
 ```bash
-make benchmark     # Run benchmark for both compilers locally
-make comparison    # Analyze and compare results
+make stdlibs            # ONCE per cluster account: build Stdlib with each compiler
+make                    # = make run; jobs → submit → wait → retry → collect → report
 ```
 
-### SLURM Cluster Execution
+`make stdlibs` submits a single SLURM job that builds the SaC Standard
+Library twice (once per compiler) into `$HOME/Stdlib/build-new` and
+`$HOME/Stdlib/build-orig`. Subsequent runs of `make` reuse those builds.
+
+`make` itself runs the whole pipeline:
+
+1. **`make jobs`** generates one SLURM array script per compiler (`array=PARAM_MIN..PARAM_MAX`).
+2. **`make submit`** submits both array jobs; IDs land in `job_ids.txt`.
+3. **`make wait`** polls `squeue` every 30 s until every task finishes.
+4. **`make retry`** (looped up to `MAX_RETRIES` times) resubmits *only* tasks
+   whose JSON record is missing or whose `task_status` is `ERROR` —
+   per-compilation `TIMEOUT`/`OOM` at high param counts are the *expected*
+   outcome and are not retried.
+5. **`make collect`** aggregates per-task JSONs into
+   `summary/combined_results.csv`, `summary/all_runs.json`, and the
+   reproducibility footer `summary/metadata.json`.
+6. **`make report`** writes `summary/report.md` (human report),
+   `summary/analysis.json` (per-(compiler, param) stats), and
+   `summary/thesis_snippet.typ` (two paste-ready Typst `#figure` tables:
+   compilation time and memory).
+
+Run inside `tmux` so the orchestrator survives login-shell time caps:
+
 ```bash
-make slurm-submit  # Submit 40 jobs (2 compilers × 20 parameter counts)
-make slurm-status  # Monitor job status
-make slurm-collect # Collect and analyze results when complete
+tmux new -s param-bench
+make
+# Ctrl-b d to detach; tmux attach -t param-bench to peek
 ```
 
-## Features
+## Configure
 
-- **Dual compiler comparison** - Tests both NEW and ORIG compilers independently
-- **Memory tracking** - Measures peak memory usage during compilation using `/usr/bin/time`
-- **Parallel SLURM execution** - 40 jobs run in parallel (2 compilers × 20 parameter counts)
-- **Statistical analysis** - Mean, min, max, and standard deviation for both time and memory
-- **Comprehensive comparison** - Head-to-head analysis with speedup ratios and winners
-- **Simple Makefile workflow** - Everything in one place, no scattered shell scripts
-
-## Configuration
-
-Edit the Makefile to customize:
+Edit `config.mk`:
 
 ```makefile
-SAC2C_new := /home/rhensen/sac2c/build_p/sac2c_p          # NEW compiler
-SAC2C_orig := /home/rhensen/orig/sac2c/build_p/sac2c_p    # ORIG compiler
+COMPILERS         := new orig
+PARAM_MIN         := 0
+PARAM_MAX         := 19
+RUNS_PER_PARAM    := 10
+RUN_TIMEOUT_SEC   := 1800              # 30 min cap per individual compilation
+RUN_VMEM_LIMIT_KB := 14000000          # 14 GB ulimit -v per compilation
+SHORTCIRCUIT_AFTER := 2                # skip remaining runs after N consecutive failures
+MAX_RETRIES       := 2
 
-# Library and tree paths for prelude and stdlib
-LIBFLAGS_new := -L ... -T ...   # NEW compiler library paths
-LIBFLAGS_orig := -L ... -T ...  # ORIG compiler library paths
-
-RUNS := 10                      # Compilation runs per test
-SLURM_* := ...                  # SLURM settings
+SLURM_PARTITION   := cncz
+SLURM_ACCOUNT     := csmpi
+SLURM_CPUS        := 4
+SLURM_MEM         := 14G
+SLURM_TIMELIMIT   := 06:00:00          # worst-case per task with short-circuit
+SLURM_ARRAY_CONCURRENCY := 4
 ```
 
-## Available Commands
+`make print-config` echoes the resolved settings.
 
-### Local Execution
-- `make benchmark` - Run full benchmark for both compilers
-- `make benchmark-new` - Run benchmark for NEW compiler only
-- `make benchmark-orig` - Run benchmark for ORIG compiler only
-- `make comparison` - Analyze and compare both compilers
-- `make clean` - Clean local build artifacts and results
+## What every per-task JSON records
 
-### SLURM Execution
-- `make slurm-submit` - Submit all 40 jobs to cluster
-- `make slurm-status` - Check job status (shows both compilers separately)
-- `make slurm-sync` - Wait for all jobs to complete
-- `make slurm-collect` - Collect and analyze all results
-- `make slurm-clean` - Clean SLURM files and logs
+`results/param-<compiler>-<param_count>.json`:
 
-### Other
-- `make help` - Show help message
-- `make distclean` - Full cleanup (local + SLURM + venv)
-- `make venv` - Setup Python virtual environment for advanced statistics
-
-## Output Files
-
-### Local execution:
-- `results-new.csv` - NEW compiler raw data
-- `results-orig.csv` - ORIG compiler raw data
-- `summary-new.md` - NEW compiler statistics (time + memory)
-- `summary-orig.md` - ORIG compiler statistics (time + memory)
-- `summary-comparison.md` - Head-to-head comparison with winners
-
-### SLURM execution:
-- `results-new-{0..19}-param.csv` - Individual NEW compiler job results
-- `results-orig-{0..19}-param.csv` - Individual ORIG compiler job results
-- `results-slurm-new.csv` - Combined NEW compiler results
-- `results-slurm-orig.csv` - Combined ORIG compiler results
-- `summary-slurm-new.md` - NEW compiler stats with node info
-- `summary-slurm-orig.md` - ORIG compiler stats with node info
-- `summary-slurm-comparison.md` - Comparison with speedups and winners
-- `job_ids.txt` - SLURM job IDs for monitoring
-- `slurm_logs/` - SLURM output logs
-
-## Example Workflow
-
-```bash
-# Submit jobs to cluster (40 jobs total)
-make slurm-submit
-
-# Monitor progress (repeat as needed)
-make slurm-status
-
-# Once all jobs complete, collect and analyze
-make slurm-collect
-
-# View results
-cat summary-slurm-new.md           # NEW compiler stats
-cat summary-slurm-orig.md          # ORIG compiler stats
-cat summary-slurm-comparison.md    # Head-to-head comparison
-
-# Clean up when done
-make slurm-clean
+```jsonc
+{
+  "compiler": "new",
+  "param_count": 9,
+  "task_status": "SUCCESS",              // or PARTIAL | ERROR
+  "task_exit_code": 0,
+  "runs": [
+    {
+      "run": 1,
+      "status": "SUCCESS",               // or TIMEOUT | OOM | ERROR | SKIPPED
+      "exit_code": 0,
+      "compilation_time_seconds": 0.382, // wall-clock (date +%s.%N)
+      "peak_rss_kb": 25600,              // GNU /usr/bin/time -v
+      "user_cpu_s": 0.30,
+      "sys_cpu_s": 0.07,
+      "error_message": ""
+    }, ...
+  ],
+  "runs_per_param_requested": 10,
+  "run_timeout_seconds": 1800,
+  "run_vmem_limit_kb": 14000000,
+  "shortcircuit_after": 2,
+  "job_id": "7984982",
+  "array_task_id": 9,
+  "node": "cn58",
+  "slurm_partition": "cncz",
+  "slurm_cpus_per_task": 4,
+  "slurm_mem_requested": "14G",
+  "slurm_timelimit_requested": "06:00:00",
+  "temp_build_root": "/scratch/rhensen",
+  "source_file": ".../9-param.sac",
+  "sac2c_path": "/home/rhensen/sac2c/build_p/sac2c_p",
+  "sac2c_commit": "...",
+  "sac2c_branch": "progressive-dispatch-clean",
+  "sac2c_describe": "v1.3.3-...",
+  "stdlib_src": "/home/rhensen/Stdlib",
+  "stdlib_build": "/home/rhensen/Stdlib/build-new",
+  "stdlib_commit": "...",
+  "stdlib_branch": "main",
+  "gcc_version": "gcc (Ubuntu 11.4.0-...)",
+  "kernel": "5.15...",
+  "os_release": "Ubuntu 22.04...",
+  "cpu_model": "Intel(R) Xeon(R) ...",
+  "total_memory_kb": 131072000,
+  "started_at": "...",
+  "finished_at": "..."
+}
 ```
 
-## Analysis Output
+`summary/metadata.json` deduplicates the constants across all tasks and
+warns if anything varied across runs (different nodes, GCC versions, ...).
 
-Each summary file includes:
+## How a single compilation is measured
 
-### Individual Compiler Analysis
-- **Time Statistics**: Average, min, max, standard deviation
-- **Memory Statistics**: Average peak memory, max peak memory, standard deviation
-- **Per-parameter breakdown**: 0-19 parameters analyzed
-
-### Comparison Analysis
-- **Compilation Time Comparison**:
-  - Speedup ratios (NEW vs ORIG)
-  - Time differences in seconds
-  - Winner declaration for each parameter count
-
-- **Memory Usage Comparison**:
-  - Memory ratios (NEW vs ORIG)
-  - Memory differences in MB
-  - Winner declaration for memory efficiency
-
-- **Overall Summary**:
-  - Win counts for each compiler
-  - Performance trends across parameter counts
-
-## Example Output
-
-```markdown
-## Compilation Time Comparison
-
-| Params | NEW Avg (s) | ORIG Avg (s) | Speedup | Time Diff (s) | Winner |
-|--------|-------------|--------------|---------|---------------|--------|
-| 0      | 0.234       | 0.245        | 1.05x   | -0.011        | NEW    |
-| 1      | 0.312       | 0.298        | 0.96x   | +0.014        | ORIG   |
-...
-
-## Memory Usage Comparison
-
-| Params | NEW Avg (MB) | ORIG Avg (MB) | Mem Ratio | Mem Diff (MB) | Winner |
-|--------|--------------|---------------|-----------|---------------|--------|
-| 0      | 45.23        | 48.12         | 0.94x     | -2.89         | NEW    |
-| 1      | 52.34        | 51.98         | 1.01x     | +0.36         | ORIG   |
-...
+```
+/usr/bin/time -v -o time.log \
+  timeout --kill-after=30 ${RUN_TIMEOUT_SEC} \
+  bash -c "ulimit -v ${RUN_VMEM_LIMIT_KB}; sac2c_p -L… -T… N-param.sac"
 ```
 
-## Comparison to CFAL-bench
+Exit-code → status classification:
 
-This repository follows the simplified structure of CFAL-bench:
-- Single Makefile handles all operations
-- Multiple compilers tested independently
-- SLURM jobs generated on-the-fly (no pre-generated scripts)
-- Built-in statistical comparison
-- Memory tracking alongside timing
-- Clear separation of local vs cluster workflows
-- Minimal file clutter
+| Exit | Status      | Meaning                                                       |
+|-----:|-------------|---------------------------------------------------------------|
+|  0   | `SUCCESS`   | compilation succeeded; `compilation_time_seconds` + `peak_rss_kb` recorded |
+| 124  | `TIMEOUT`   | `timeout` killed the compilation at the wall-clock cap        |
+| 137  | `OOM`       | `ulimit -v` killed the compilation (or external SIGKILL)      |
+| other| `ERROR`     | sac2c exited non-zero for some other reason                   |
+|  —   | `SKIPPED`   | short-circuit: too many consecutive failures, this run skipped |
 
-## Technical Details
+The per-task SLURM `--mem` is set to match the per-compilation `ulimit -v`
+so that hitting the cap surfaces as an OOM at the compilation level, not
+at the task level.
 
-### Compiler Invocation
-Each compiler is invoked with library flags (`LIBFLAGS`) that specify paths to:
-- Prelude library (`-L` and `-T` flags for library and tree paths)
-- Stdlib library (`-L` and `-T` flags for library and tree paths)
+## Outputs
 
-This ensures the compiler can find all necessary runtime libraries during compilation.
+```
+summary/
+├── combined_results.csv   # one row per individual compilation (~400 rows)
+├── all_runs.json          # full per-task records
+├── metadata.json          # batch-level reproducibility footer
+├── analysis.json          # per-(compiler, param) stats
+├── report.md              # human-readable summary
+└── thesis_snippet.typ     # two Typst figures: compile time + memory
+```
 
-### Memory Measurement
-Memory is tracked using `/usr/bin/time -f "%M"` which reports maximum resident set size in KB. This is converted to MB in the analysis.
+## Troubleshooting
 
-### SLURM Job Distribution
-- Each compiler/parameter combination runs as a separate job
-- 40 total jobs: 2 compilers × 20 parameter counts
-- Jobs are independent and can run in parallel
-- Results are collected after all jobs complete
+- **`make stdlibs` failed.** Look at `build-stdlibs-<jobid>.{out,err}`. Most
+  common cause: the corresponding `sac2c_p` binary doesn't exist — check
+  the paths in `config.mk` and build the compilers via stdlib-bench-sac's
+  `build_sac2c.sh` (or any equivalent).
+- **A task fails (`task_status = ERROR`).** The per-task JSON has the
+  reason in `task_error_message`. `make retry` will resubmit it.
+  Per-compilation failures (`PARTIAL`) are *expected* at high param counts
+  for the baseline compiler and are **not** retried.
+- **Inspect a specific run.** SLURM logs are
+  `slurm-<compiler>-<param_count>-<job_id>.{out,err}`.
+- **Keep the previous run's data.** `make clean` does **not** delete: it
+  moves the current `jobs/`, `results/`, `summary/`, SLURM logs and
+  `job_ids.txt` into `archive/<YYYYMMDDTHHMMSS>/`.
 
-### Statistical Analysis
-- Each configuration is run 10 times (configurable via `RUNS`)
-- Statistics computed: mean, min, max, standard deviation
-- Comparisons include speedup ratios and absolute differences
-- Winner determined by lower time/memory (not considering statistical significance)
+## Layout
+
+```
+.
+├── Makefile                  # workflow orchestration
+├── config.mk                 # editable configuration
+├── job_template.sh           # SLURM array task body (filled by generate_jobs.sh)
+├── [0..19]-param.sac         # benchmark inputs (one source file per param count)
+├── scripts/
+│   ├── generate_jobs.sh      # emit jobs/param-<compiler>.array.sh
+│   ├── submit_all.sh         # sbatch each array job; write job_ids.txt
+│   ├── wait_jobs.sh          # poll squeue until terminal
+│   ├── check_jobs.sh         # human-readable per-task status
+│   ├── retry_failed.sh       # resubmit only the ERROR task IDs
+│   ├── collect_results.sh    # aggregate JSON -> CSV + metadata
+│   ├── generate_report.sh    # report.md + analysis.json + thesis snippet
+│   ├── build_stdlibs.sh      # one-time `make stdlibs` driver
+│   └── run_all.sh            # umbrella invoked by `make run`
+├── jobs/                     # generated; one array script per compiler
+├── results/                  # generated; one JSON per task
+├── summary/                  # generated; final aggregates
+└── archive/                  # produced by `make clean`
+```
