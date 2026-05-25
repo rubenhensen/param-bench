@@ -34,12 +34,16 @@ echo "Node: \$(hostname)   Started: \$(date -Iseconds)"
 build_stdlib_with () {
   local sac2c="\$1"
   local builddir="\$2"
+  # Isolate HOME so this build's sac2crc file doesn't bleed into the next build.
+  local isolated_home; isolated_home="\$(mktemp -d)"
   echo "==== building Stdlib at \${builddir} using \${sac2c} ===="
+  echo "     isolated HOME: \${isolated_home}"
   rm -rf "\${builddir}"
   mkdir -p "\${builddir}"
   cd "\${builddir}"
-  cmake -DTARGETS='seq;mt_pth' -DSAC2C_EXEC="\${sac2c}" "${STDLIB_SRC_SLURM}"
-  make -j "\${SLURM_CPUS_PER_TASK}"
+  HOME="\${isolated_home}" cmake -DTARGETS='seq;mt_pth' -DSAC2C_EXEC="\${sac2c}" "${STDLIB_SRC_SLURM}"
+  HOME="\${isolated_home}" make -j "\${SLURM_CPUS_PER_TASK}"
+  rm -rf "\${isolated_home}"
   echo "  -> \${builddir}/lib:"
   ls -l "\${builddir}/lib" | head
 }
