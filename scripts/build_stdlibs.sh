@@ -34,10 +34,17 @@ echo "Node: \$(hostname)   Started: \$(date -Iseconds)"
 build_stdlib_with () {
   local sac2c="\$1"
   local builddir="\$2"
-  # Isolate HOME so this build's sac2crc file doesn't bleed into the next build.
+  local prelude="\$3"
+  # Isolate HOME so this build's sac2crc doesn't bleed into the next build.
+  # Also pre-write the prelude sac2crc so sac2c can find its own runtime libs
+  # (without it sac2c fails with "Cannot find library sacprelude_p").
   local isolated_home; isolated_home="\$(mktemp -d)"
+  mkdir -p "\${isolated_home}/.sac2crc"
+  printf 'target add_local:\nTREEPATH       += "%s:"\nLIBPATH        += "%s:"\n\ntarget default_sbi :: add_local:\n' "\${prelude}" "\${prelude}" > "\${isolated_home}/.sac2crc/sac2crc.release.prelude"
+  cp "\${isolated_home}/.sac2crc/sac2crc.release.prelude" "\${isolated_home}/.sac2crc/sac2crc.debug.prelude"
   echo "==== building Stdlib at \${builddir} using \${sac2c} ===="
-  echo "     isolated HOME: \${isolated_home}"
+  echo "     isolated HOME : \${isolated_home}"
+  echo "     prelude path  : \${prelude}"
   rm -rf "\${builddir}"
   mkdir -p "\${builddir}"
   cd "\${builddir}"
@@ -48,8 +55,8 @@ build_stdlib_with () {
   ls -l "\${builddir}/lib" | head
 }
 
-build_stdlib_with "${SAC2C_ORIG_SLURM}" "${STDLIB_BUILD_ORIG}"
-build_stdlib_with "${SAC2C_NEW_SLURM}"  "${STDLIB_BUILD_NEW}"
+build_stdlib_with "${SAC2C_ORIG_SLURM}" "${STDLIB_BUILD_ORIG}" "${SAC2C_ORIG_DIR_SLURM}/runtime_build/src/runtime_libraries-build/lib/prelude"
+build_stdlib_with "${SAC2C_NEW_SLURM}"  "${STDLIB_BUILD_NEW}"  "${SAC2C_NEW_DIR_SLURM}/runtime_build/src/runtime_libraries-build/lib/prelude"
 
 echo "Finished: \$(date -Iseconds)"
 EOF
