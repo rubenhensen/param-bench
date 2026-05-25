@@ -1,0 +1,78 @@
+========================================================================
+Parameter benchmark — task orig/param=9
+========================================================================
+Compiler   : orig  (/home/rhensen/sacoriginal/sac2c/build_p/sac2c_p)
+Source     : /home/rhensen/param-bench/9-param.sac
+Stdlib     : /home/rhensen/Stdlib/build-orig
+Runs       : 10 (timeout 1800s, vmem cap 14000000KB)
+Job ID     : 1642222 (task 9)
+Node       : cn99
+========================================================================
+
+--- run 1/10 ---
+  status=TIMEOUT  wall=1800.451523s  rss=5760284KB  exit=124
+  --- last 20 lines of /scratch/rhensen/param_bench_orig_9_1642222_9/run-1.log ---
+  ------------------------------------
+
+--- run 2/10 ---
+  status=TIMEOUT  wall=1800.488979s  rss=5760380KB  exit=124
+  --- last 20 lines of /scratch/rhensen/param_bench_orig_9_1642222_9/run-2.log ---
+  ------------------------------------
+
+--- run 3/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 4/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 5/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 6/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 7/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 8/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 9/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 10/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+========================================================================
+Task complete: PARTIAL
+Record: /home/rhensen/param-bench/results/param-orig-9.json
+========================================================================
+
+
+###############################################################################
+Science Cluster
+Job 1642312 for user 'rhensen'
+Finished at: Mon May 25 05:42:38 UTC 2026
+
+Job details:
+============
+
+Name                : param-orig
+User                : rhensen
+Partition           : cncz
+Nodes               : cn99
+Cores               : 4
+State               : COMPLETED
+Submit              : 2026-05-24T23:20:04
+Start               : 2026-05-25T04:42:36
+End                 : 2026-05-25T05:42:38
+Reserved walltime   : 06:00:00
+Used walltime       : 01:00:02
+Used CPU time       : 00:59:56 (efficiency: 24.96%)
+% User (Computation): 99.33%
+% System (I/O)      :  0.67%
+Mem reserved        : 14G
+Max Mem used        : 5.50G (cn99)
+Max Disk Write      : 20.48K (cn99)
+Max Disk Read       : 1.36M (cn99)
+

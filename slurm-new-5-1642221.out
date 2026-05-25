@@ -1,0 +1,73 @@
+========================================================================
+Parameter benchmark — task new/param=5
+========================================================================
+Compiler   : new  (/home/rhensen/sac2c/build_p/sac2c_p)
+Source     : /home/rhensen/param-bench/5-param.sac
+Stdlib     : /home/rhensen/Stdlib/build-new
+Runs       : 10 (timeout 1800s, vmem cap 14000000KB)
+Job ID     : 1642221 (task 5)
+Node       : cn99
+========================================================================
+
+--- run 1/10 ---
+  status=ERROR  wall=0.037767s  rss=10084KB  exit=1
+  --- last 20 lines of /scratch/rhensen/param_bench_new_5_1642221_5/run-1.log ---
+//home/rhensen/param-bench/5-param.sac:1:10: error:
+  cannot find library for module `Array'!
+Abort:
+  Failed to construct a syntax tree for `5-param.sac'
+  
+Compilation failed while Loading SAC program, 1 error(s).
+  ------------------------------------
+
+--- run 2/10 ---
+  status=ERROR  wall=0.032254s  rss=10100KB  exit=1
+  --- last 20 lines of /scratch/rhensen/param_bench_new_5_1642221_5/run-2.log ---
+//home/rhensen/param-bench/5-param.sac:1:10: error:
+  cannot find library for module `Array'!
+Abort:
+  Failed to construct a syntax tree for `5-param.sac'
+  
+Compilation failed while Loading SAC program, 1 error(s).
+  ------------------------------------
+
+--- run 3/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 4/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 5/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 6/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 7/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 8/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 9/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 10/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+========================================================================
+Task complete: PARTIAL
+Record: /home/rhensen/param-bench/results/param-new-5.json
+========================================================================
+
+
+###############################################################################
+Science Cluster
+Job 1642287 for user 'rhensen'
+Finished at: Mon May 25 04:35:33 UTC 2026
+
+Job details:
+============
+
+
+
