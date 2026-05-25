@@ -1,0 +1,73 @@
+{
+  "compilers": {
+    "new": {
+      "sac2c_branch": "progressive-dispatch-clean",
+      "sac2c_commit": "f2870cfeac931033f66bf11ab827beee08030327",
+      "sac2c_describe": "v2.1.0-PuurGeluk-327-gf2870cfea",
+      "sac2c_path": "/home/rhensen/sac2c/build_p/sac2c_p",
+      "sac2c_version_raw": "sac2c 2.1.0-PuurGeluk-327-gf2870|build-type: RELEASE|built-by: \"rhensen\" at 2026-05-24T17:49:38|",
+      "stdlib_build": "/home/rhensen/Stdlib/build-new"
+    },
+    "orig": {
+      "sac2c_branch": "develop",
+      "sac2c_commit": "ab3bbecacf1a978daf64b88cabc4b9df53d4b2e8",
+      "sac2c_describe": "v2.1.0-PuurGeluk-269-gab3bbecac",
+      "sac2c_path": "/home/rhensen/sacoriginal/sac2c/build_p/sac2c_p",
+      "sac2c_version_raw": "sac2c 2.1.0-PuurGeluk-269-gab3bb|build-type: RELEASE|built-by: \"rhensen\" at 2026-05-24T17:37:57|",
+      "stdlib_build": "/home/rhensen/Stdlib/build-orig"
+    }
+  },
+  "config": {
+    "compilers": [
+      "new",
+      "orig"
+    ],
+    "param_max": 19,
+    "param_min": 0,
+    "run_timeout_seconds": 1800,
+    "run_vmem_limit_kb": 14000000,
+    "runs_per_param": 10,
+    "shortcircuit_after": 2
+  },
+  "finished_at": "2026-05-25T05:42:38+00:00",
+  "hardware": {
+    "cpu_model": "Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz",
+    "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "kernel": "6.17.0-14-generic",
+    "nodes_used": [
+      "cn99"
+    ],
+    "os_release": "Ubuntu 24.04.4 LTS",
+    "total_memory_kb": 264023620
+  },
+  "slurm": {
+    "account": "csmpi",
+    "cpus_per_task": "4",
+    "mem_requested": "14G",
+    "partition": "cncz",
+    "timelimit_requested": "06:00:00"
+  },
+  "started_at": "2026-05-25T04:35:27+00:00",
+  "stdlib": {
+    "branch": "master",
+    "commit": "9afffd46db51fd6877048f34fbd6c5a5de5eede5",
+    "src_path": "/home/rhensen/Stdlib"
+  },
+  "totals": {
+    "by_compiler": {
+      "new": {
+        "PARTIAL": 20
+      },
+      "orig": {
+        "PARTIAL": 11,
+        "SUCCESS": 9
+      }
+    },
+    "by_task_status": {
+      "PARTIAL": 31,
+      "SUCCESS": 9
+    },
+    "task_records": 40
+  },
+  "warnings": []
+}
