@@ -1,0 +1,39 @@
+[0m
+ * Stdlib configuration done.
+ *
+ * sac2c executable:       /home/rhensen/sacoriginal/sac2c/build_p/sac2c_p
+ * local builddir:         /home/rhensen/Stdlib/build-orig/lib
+ * targets:                seq;mt_pth
+ * sac2c CPP flags:        -DHAVE_CONFIG_H;-cppI/home/rhensen/Stdlib/build-orig/include;-cppI/home/rhensen/Stdlib/include
+ * sac2c extra flags:      -DHAVE_CONFIG_H;-I/home/rhensen/Stdlib/build-orig/include;-I/home/rhensen/Stdlib/include
+ *
+ * Configuration state:
+ * - full types:           OFF
+ * - build generic         OFF
+ * - build extended:       ON
+ *
+ * Packaging state:
+ * - is release:           FALSE
+[0m
+Abort:
+  Cannot find library `tree/host/libsacprelude_pTree.so' for module `sacprelude_p'
+Abort:
+  Cannot find library `tree/host/libsacprelude_pTree.so' for module `sacprelude_p'
+Compilation failed while Running module system.
+Compilation failed while Running module system.
+make[3]: *** [src-seq/CMakeFiles/seq-module-ArrayBasics.dir/build.make:74: lib/host/seq/libArrayBasicsMod.so] Error 29
+make[3]: *** [src-seq/CMakeFiles/seq-module-ScalarArith.dir/build.make:74: lib/host/seq/libScalarArithMod.so] Error 29
+make[2]: *** [CMakeFiles/Makefile2:1700: src-seq/CMakeFiles/seq-module-ArrayBasics.dir/all] Error 2
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/Makefile2:1781: src-seq/CMakeFiles/seq-module-ScalarArith.dir/all] Error 2
+Abort:
+  Cannot find library `tree/host/libsacprelude_pTree.so' for module `sacprelude_p'
+Compilation failed while Running module system.
+make[3]: *** [src-seq/CMakeFiles/seq-module-Char.dir/build.make:75: lib/host/seq/libCharMod.so] Error 29
+make[2]: *** [CMakeFiles/Makefile2:665: src-seq/CMakeFiles/seq-module-Char.dir/all] Error 2
+Abort:
+  Cannot find library `tree/host/libsacprelude_pTree.so' for module `sacprelude_p'
+Compilation failed while Running module system.
+make[3]: *** [src-seq/CMakeFiles/seq-module-World.dir/build.make:75: lib/host/seq/libWorldMod.so] Error 29
+make[2]: *** [CMakeFiles/Makefile2:1184: src-seq/CMakeFiles/seq-module-World.dir/all] Error 2
+make[1]: *** [Makefile:156: all] Error 2

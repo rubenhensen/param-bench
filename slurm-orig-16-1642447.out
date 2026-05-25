@@ -1,0 +1,92 @@
+========================================================================
+Parameter benchmark — task orig/param=16
+========================================================================
+Compiler   : orig  (/home/rhensen/sacoriginal/sac2c/build_p/sac2c_p)
+Source     : /home/rhensen/param-bench/16-param.sac
+Stdlib     : /home/rhensen/Stdlib/build-orig
+Runs       : 10 (timeout 1800s, vmem cap 14000000KB)
+Job ID     : 1642447 (task 16)
+Node       : cn99
+========================================================================
+
+--- run 1/10 ---
+  status=OOM  wall=19.606873s  rss=13964532KB  exit=139
+  --- last 20 lines of /scratch/rhensen/param_bench_orig_16_1642447_16/run-1.log ---
+
+
+OOOOOOOPS, your program crashed the compiler 8-((
+
+Please, submit the bug report online at
+https://gitlab.sac-home.org/sac-group/sac2c/-/issues.
+
+  ------------------------------------
+
+--- run 2/10 ---
+  status=OOM  wall=19.603234s  rss=13964564KB  exit=139
+  --- last 20 lines of /scratch/rhensen/param_bench_orig_16_1642447_16/run-2.log ---
+
+
+OOOOOOOPS, your program crashed the compiler 8-((
+
+Please, submit the bug report online at
+https://gitlab.sac-home.org/sac-group/sac2c/-/issues.
+
+  ------------------------------------
+
+--- run 3/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 4/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 5/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 6/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 7/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 8/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 9/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 10/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+========================================================================
+Task complete: PARTIAL
+Record: /home/rhensen/param-bench/results/param-orig-16.json
+========================================================================
+
+
+###############################################################################
+Science Cluster
+Job 1642483 for user 'rhensen'
+Finished at: Mon May 25 12:47:45 UTC 2026
+
+Job details:
+============
+
+Name                : param-orig
+User                : rhensen
+Partition           : cncz
+Nodes               : cn99
+Cores               : 4
+State               : COMPLETED
+Submit              : 2026-05-25T12:25:43
+Start               : 2026-05-25T12:47:05
+End                 : 2026-05-25T12:47:45
+Reserved walltime   : 06:00:00
+Used walltime       : 00:00:40
+Used CPU time       : 00:00:39 (efficiency: 24.83%)
+% User (Computation): 63.15%
+% System (I/O)      : 36.85%
+Mem reserved        : 14G
+Max Mem used        : 13.34G (cn99)
+Max Disk Write      : 0.00  (cn99)
+Max Disk Read       : 0.00  (cn99)
+

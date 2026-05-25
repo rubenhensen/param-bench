@@ -1,61 +1,60 @@
 # Parameter Scalability Benchmark — Report
 
-_Generated: 2026-05-25T09:52:33_
+_Generated: 2026-05-25T18:39:01_
 
 ## Compilation time (seconds)
 
 | Params | new mean | orig mean | new std | orig std |
 |---|---|---|---|---|
-| 0 | ERROR | 0.581 | — | 0.012 |
-| 1 | ERROR | 0.688 | — | 0.013 |
-| 2 | ERROR | 0.627 | — | 0.013 |
-| 3 | ERROR | 0.688 | — | 0.008 |
-| 4 | ERROR | 0.796 | — | 0.018 |
-| 5 | ERROR | 1.219 | — | 0.032 |
-| 6 | ERROR | 3.321 | — | 0.028 |
-| 7 | ERROR | 17.364 | — | 0.423 |
-| 8 | ERROR | 173.600 | — | 17.537 |
-| 9 | ERROR | TIME OUT | — | — |
-| 10 | ERROR | ERROR | — | — |
-| 11 | ERROR | ERROR | — | — |
-| 12 | ERROR | ERROR | — | — |
-| 13 | ERROR | ERROR | — | — |
-| 14 | ERROR | ERROR | — | — |
-| 15 | ERROR | ERROR | — | — |
-| 16 | ERROR | ERROR | — | — |
-| 17 | ERROR | ERROR | — | — |
-| 18 | ERROR | ERROR | — | — |
-| 19 | ERROR | ERROR | — | — |
+| 0 | 0.565 | 0.578 | 0.012 | 0.011 |
+| 1 | 0.633 | 0.672 | 0.012 | 0.011 |
+| 2 | 0.587 | 0.634 | 0.011 | 0.035 |
+| 3 | 0.636 | 0.704 | 0.009 | 0.050 |
+| 4 | 0.644 | 0.738 | 0.010 | 0.013 |
+| 5 | 0.659 | 1.057 | 0.011 | 0.012 |
+| 6 | 0.687 | 2.903 | 0.011 | 0.013 |
+| 7 | 0.729 | 16.092 | 0.039 | 0.199 |
+| 8 | 0.724 | 147.202 | 0.038 | 11.505 |
+| 9 | 0.717 | 1753.026 | 0.015 | 11.880 |
+| 10 | 0.708 | OUT OF MEM. | 0.011 | — |
+| 11 | 0.750 | OUT OF MEM. | 0.042 | — |
+| 12 | 0.790 | OUT OF MEM. | 0.042 | — |
+| 13 | 0.790 | OUT OF MEM. | 0.052 | — |
+| 14 | 0.747 | OUT OF MEM. | 0.013 | — |
+| 15 | 0.757 | OUT OF MEM. | 0.010 | — |
+| 16 | 0.773 | OUT OF MEM. | 0.014 | — |
+| 17 | 0.790 | OUT OF MEM. | 0.011 | — |
+| 18 | 0.794 | OUT OF MEM. | 0.012 | — |
+| 19 | 0.811 | OUT OF MEM. | 0.012 | — |
 
 ## Peak resident-set memory (MB; via /usr/bin/time -v)
 
 | Params | new mean (MB) | orig mean (MB) | new max (MB) | orig max (MB) |
 |---|---|---|---|---|
-| 0 | ERROR | 39.20 | — | 39.26 |
-| 1 | ERROR | 49.70 | — | 49.75 |
-| 2 | ERROR | 46.79 | — | 46.92 |
-| 3 | ERROR | 49.71 | — | 49.80 |
-| 4 | ERROR | 56.99 | — | 57.18 |
-| 5 | ERROR | 80.80 | — | 81.02 |
-| 6 | ERROR | 163.47 | — | 163.62 |
-| 7 | ERROR | 503.09 | — | 503.36 |
-| 8 | ERROR | 1659.42 | — | 1659.60 |
-| 9 | ERROR | TIME OUT | — | — |
-| 10 | ERROR | ERROR | — | — |
-| 11 | ERROR | ERROR | — | — |
-| 12 | ERROR | ERROR | — | — |
-| 13 | ERROR | ERROR | — | — |
-| 14 | ERROR | ERROR | — | — |
-| 15 | ERROR | ERROR | — | — |
-| 16 | ERROR | ERROR | — | — |
-| 17 | ERROR | ERROR | — | — |
-| 18 | ERROR | ERROR | — | — |
-| 19 | ERROR | ERROR | — | — |
+| 0 | 36.13 | 39.18 | 36.23 | 39.26 |
+| 1 | 42.88 | 49.71 | 43.15 | 49.83 |
+| 2 | 41.86 | 46.68 | 42.05 | 46.96 |
+| 3 | 42.90 | 49.61 | 42.98 | 49.76 |
+| 4 | 43.56 | 56.98 | 43.82 | 57.18 |
+| 5 | 44.27 | 80.85 | 44.48 | 81.04 |
+| 6 | 45.05 | 163.49 | 45.20 | 163.64 |
+| 7 | 45.75 | 503.16 | 45.92 | 503.37 |
+| 8 | 46.43 | 1659.35 | 46.57 | 1659.53 |
+| 9 | 47.21 | 5653.93 | 47.32 | 5654.10 |
+| 10 | 47.96 | OUT OF MEM. | 48.17 | — |
+| 11 | 48.80 | OUT OF MEM. | 48.91 | — |
+| 12 | 49.54 | OUT OF MEM. | 49.80 | — |
+| 13 | 50.35 | OUT OF MEM. | 50.48 | — |
+| 14 | 51.18 | OUT OF MEM. | 51.42 | — |
+| 15 | 51.99 | OUT OF MEM. | 52.12 | — |
+| 16 | 52.80 | OUT OF MEM. | 52.91 | — |
+| 17 | 53.62 | OUT OF MEM. | 53.75 | — |
+| 18 | 54.54 | OUT OF MEM. | 54.67 | — |
+| 19 | 55.39 | OUT OF MEM. | 55.50 | — |
 
 ## Failure thresholds
 
-- `new` first hit a non-SUCCESS state at **param = 0** (`ERROR`).
-- `orig` first hit a non-SUCCESS state at **param = 9** (`TIME OUT`).
+- `orig` first hit a non-SUCCESS state at **param = 10** (`OUT OF MEM.`).
 
 ## Reproducibility metadata
 
@@ -112,6 +111,6 @@ _Generated: 2026-05-25T09:52:33_
 - Runs per (compiler, param): `10`
 - Measurement: wall-clock via `date +%s.%N` around `timeout … ulimit -v … sac2c …`; peak RSS via GNU `/usr/bin/time -v`.
 
-_Started: 2026-05-25T04:35:27+00:00 — Finished: 2026-05-25T05:42:38+00:00_
+_Started: 2026-05-25T12:25:44+00:00 — Finished: 2026-05-25T17:35:15+00:00_
 
 Source data: `summary/combined_results.csv` (one row per individual compilation), `summary/all_runs.json` (full per-task records), `summary/metadata.json` (this footer).

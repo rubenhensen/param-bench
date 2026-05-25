@@ -29,7 +29,7 @@
     "runs_per_param": 10,
     "shortcircuit_after": 2
   },
-  "finished_at": "2026-05-25T05:42:38+00:00",
+  "finished_at": "2026-05-25T17:35:15+00:00",
   "hardware": {
     "cpu_model": "Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz",
     "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
@@ -47,7 +47,7 @@
     "partition": "cncz",
     "timelimit_requested": "06:00:00"
   },
-  "started_at": "2026-05-25T04:35:27+00:00",
+  "started_at": "2026-05-25T12:25:44+00:00",
   "stdlib": {
     "branch": "master",
     "commit": "9afffd46db51fd6877048f34fbd6c5a5de5eede5",
@@ -56,7 +56,7 @@
   "totals": {
     "by_compiler": {
       "new": {
-        "PARTIAL": 20
+        "SUCCESS": 20
       },
       "orig": {
         "PARTIAL": 11,
@@ -64,8 +64,8 @@
       }
     },
     "by_task_status": {
-      "PARTIAL": 31,
-      "SUCCESS": 9
+      "PARTIAL": 11,
+      "SUCCESS": 29
     },
     "task_records": 40
   },

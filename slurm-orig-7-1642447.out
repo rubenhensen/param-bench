@@ -1,0 +1,74 @@
+========================================================================
+Parameter benchmark — task orig/param=7
+========================================================================
+Compiler   : orig  (/home/rhensen/sacoriginal/sac2c/build_p/sac2c_p)
+Source     : /home/rhensen/param-bench/7-param.sac
+Stdlib     : /home/rhensen/Stdlib/build-orig
+Runs       : 10 (timeout 1800s, vmem cap 14000000KB)
+Job ID     : 1642447 (task 7)
+Node       : cn99
+========================================================================
+
+--- run 1/10 ---
+  status=SUCCESS  wall=16.064134s  rss=515292KB  exit=0
+
+--- run 2/10 ---
+  status=SUCCESS  wall=16.379714s  rss=515248KB  exit=0
+
+--- run 3/10 ---
+  status=SUCCESS  wall=16.037538s  rss=514972KB  exit=0
+
+--- run 4/10 ---
+  status=SUCCESS  wall=16.342565s  rss=515244KB  exit=0
+
+--- run 5/10 ---
+  status=SUCCESS  wall=16.351008s  rss=515196KB  exit=0
+
+--- run 6/10 ---
+  status=SUCCESS  wall=15.849890s  rss=515376KB  exit=0
+
+--- run 7/10 ---
+  status=SUCCESS  wall=16.012786s  rss=515248KB  exit=0
+
+--- run 8/10 ---
+  status=SUCCESS  wall=15.895975s  rss=514928KB  exit=0
+
+--- run 9/10 ---
+  status=SUCCESS  wall=15.899619s  rss=515376KB  exit=0
+
+--- run 10/10 ---
+  status=SUCCESS  wall=16.088319s  rss=515452KB  exit=0
+
+========================================================================
+Task complete: SUCCESS
+Record: /home/rhensen/param-bench/results/param-orig-7.json
+========================================================================
+
+
+###############################################################################
+Science Cluster
+Job 1642474 for user 'rhensen'
+Finished at: Mon May 25 12:32:32 UTC 2026
+
+Job details:
+============
+
+Name                : param-orig
+User                : rhensen
+Partition           : cncz
+Nodes               : cn99
+Cores               : 4
+State               : COMPLETED
+Submit              : 2026-05-25T12:25:43
+Start               : 2026-05-25T12:29:50
+End                 : 2026-05-25T12:32:32
+Reserved walltime   : 06:00:00
+Used walltime       : 00:02:42
+Used CPU time       : 00:02:41 (efficiency: 24.86%)
+% User (Computation): 95.71%
+% System (I/O)      :  4.29%
+Mem reserved        : 14G
+Max Mem used        : 514.10M (cn99)
+Max Disk Write      : 7.73M (cn99)
+Max Disk Read       : 50.86M (cn99)
+

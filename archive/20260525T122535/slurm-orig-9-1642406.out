@@ -1,0 +1,41 @@
+========================================================================
+Parameter benchmark — task orig/param=9
+========================================================================
+Compiler   : orig  (/home/rhensen/sacoriginal/sac2c/build_p/sac2c_p)
+Source     : /home/rhensen/param-bench/9-param.sac
+Stdlib     : /home/rhensen/Stdlib/build-orig
+Runs       : 10 (timeout 1800s, vmem cap 14000000KB)
+Job ID     : 1642406 (task 9)
+Node       : cn99
+========================================================================
+
+--- run 1/10 ---
+
+
+###############################################################################
+Science Cluster
+Job 1642435 for user 'rhensen'
+Finished at: Mon May 25 12:25:34 UTC 2026
+
+Job details:
+============
+
+Name                : param-orig
+User                : rhensen
+Partition           : cncz
+Nodes               : cn99
+Cores               : 4
+State               : CANCELLED,CANCELLED by 34220
+Submit              : 2026-05-25T12:06:21
+Start               : 2026-05-25T12:09:47
+End                 : 2026-05-25T12:25:33
+Reserved walltime   : 06:00:00
+Used walltime       : 00:15:46
+Used CPU time       : 00:15:43 (efficiency: 24.93%)
+% User (Computation): 99.35%
+% System (I/O)      :  0.65%
+Mem reserved        : 14G
+Max Mem used        : 5.50G (cn99)
+Max Disk Write      : 10.24K (cn99)
+Max Disk Read       : 624.64K (cn99)
+

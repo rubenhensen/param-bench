@@ -1,0 +1,426 @@
+{
+  "compilers": {
+    "new": {
+      "sac2c_branch": "progressive-dispatch-clean",
+      "sac2c_commit": "f2870cfeac931033f66bf11ab827beee08030327",
+      "sac2c_describe": "v2.1.0-PuurGeluk-327-gf2870cfea",
+      "sac2c_path": "/home/rhensen/sac2c/build_p/sac2c_p",
+      "sac2c_version_raw": "sac2c 2.1.0-PuurGeluk-327-gf2870|build-type: RELEASE|built-by: \"rhensen\" at 2026-05-24T17:49:38|",
+      "stdlib_build": "/home/rhensen/Stdlib/build-new"
+    },
+    "orig": {
+      "sac2c_branch": "develop",
+      "sac2c_commit": "ab3bbecacf1a978daf64b88cabc4b9df53d4b2e8",
+      "sac2c_describe": "v2.1.0-PuurGeluk-269-gab3bbecac",
+      "sac2c_path": "/home/rhensen/sacoriginal/sac2c/build_p/sac2c_p",
+      "sac2c_version_raw": "sac2c 2.1.0-PuurGeluk-269-gab3bb|build-type: RELEASE|built-by: \"rhensen\" at 2026-05-24T17:37:57|",
+      "stdlib_build": "/home/rhensen/Stdlib/build-orig"
+    }
+  },
+  "config": {
+    "compilers": [
+      "new",
+      "orig"
+    ],
+    "param_max": 19,
+    "param_min": 0,
+    "run_timeout_seconds": 1800,
+    "run_vmem_limit_kb": 14000000,
+    "runs_per_param": 10,
+    "shortcircuit_after": 2
+  },
+  "per_cell": {
+    "new/0": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/1": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/10": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/11": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/12": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/13": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/14": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/15": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/16": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/17": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/18": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/19": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/2": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/3": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/4": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/5": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/6": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/7": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/8": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "new/9": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "orig/0": {
+      "max_rss_kb": 40204.0,
+      "max_time": 0.613429,
+      "mean_rss_kb": 40136.8,
+      "mean_time": 0.5805499999999999,
+      "min_rss_kb": 39968.0,
+      "min_time": 0.570779,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 82.44702002565715,
+      "std_time": 0.012320015115430839
+    },
+    "orig/1": {
+      "max_rss_kb": 50948.0,
+      "max_time": 0.714478,
+      "mean_rss_kb": 50890.8,
+      "mean_time": 0.6879225000000001,
+      "min_rss_kb": 50800.0,
+      "min_time": 0.673645,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 56.82096639641236,
+      "std_time": 0.013477687917855582
+    },
+    "orig/10": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "orig/11": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "orig/12": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "orig/13": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "orig/14": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "orig/15": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "orig/16": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "orig/17": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "orig/18": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "orig/19": {
+      "breakdown": {
+        "ERROR": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "ERROR"
+    },
+    "orig/2": {
+      "max_rss_kb": 48048.0,
+      "max_time": 0.651192,
+      "mean_rss_kb": 47914.4,
+      "mean_time": 0.6265509,
+      "min_rss_kb": 47736.0,
+      "min_time": 0.611484,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 90.63136567681435,
+      "std_time": 0.012881306148834435
+    },
+    "orig/3": {
+      "max_rss_kb": 50996.0,
+      "max_time": 0.697292,
+      "mean_rss_kb": 50901.2,
+      "mean_time": 0.6879272000000001,
+      "min_rss_kb": 50820.0,
+      "min_time": 0.668612,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 66.80119759405515,
+      "std_time": 0.008339271801409157
+    },
+    "orig/4": {
+      "max_rss_kb": 58552.0,
+      "max_time": 0.839368,
+      "mean_rss_kb": 58354.4,
+      "mean_time": 0.7961710000000001,
+      "min_rss_kb": 58152.0,
+      "min_time": 0.780405,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 104.32768887820083,
+      "std_time": 0.017728763051418253
+    },
+    "orig/5": {
+      "max_rss_kb": 82964.0,
+      "max_time": 1.270488,
+      "mean_rss_kb": 82739.6,
+      "mean_time": 1.2185012,
+      "min_rss_kb": 82604.0,
+      "min_time": 1.174698,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 108.212958763932,
+      "std_time": 0.032111647391215845
+    },
+    "orig/6": {
+      "max_rss_kb": 167548.0,
+      "max_time": 3.368098,
+      "mean_rss_kb": 167389.6,
+      "mean_time": 3.3209522,
+      "min_rss_kb": 167116.0,
+      "min_time": 3.268831,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 145.04803801959312,
+      "std_time": 0.02765249027483781
+    },
+    "orig/7": {
+      "max_rss_kb": 515436.0,
+      "max_time": 18.148196,
+      "mean_rss_kb": 515160.8,
+      "mean_time": 17.363960199999998,
+      "min_rss_kb": 514956.0,
+      "min_time": 16.925831,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 140.2575408945194,
+      "std_time": 0.4233498733285372
+    },
+    "orig/8": {
+      "max_rss_kb": 1699432.0,
+      "max_time": 205.175851,
+      "mean_rss_kb": 1699246.0,
+      "mean_time": 173.5999992,
+      "min_rss_kb": 1699040.0,
+      "min_time": 154.362782,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 133.25664461231693,
+      "std_time": 17.537081656671656
+    },
+    "orig/9": {
+      "breakdown": {
+        "SKIPPED": 8,
+        "TIMEOUT": 2
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "TIME OUT"
+    }
+  },
+  "stdlib": {
+    "branch": "master",
+    "commit": "9afffd46db51fd6877048f34fbd6c5a5de5eede5",
+    "src_path": "/home/rhensen/Stdlib"
+  }
+}

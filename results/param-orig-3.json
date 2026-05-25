@@ -2,9 +2,9 @@
   "array_task_id": 3,
   "compiler": "orig",
   "cpu_model": "Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz",
-  "finished_at": "2026-05-25T04:36:20+00:00",
+  "finished_at": "2026-05-25T12:28:59+00:00",
   "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
-  "job_id": "1642222",
+  "job_id": "1642447",
   "kernel": "6.17.0-14-generic",
   "node": "cn99",
   "os_release": "Ubuntu 24.04.4 LTS",
@@ -13,104 +13,104 @@
   "run_vmem_limit_kb": 14000000,
   "runs": [
     {
-      "compilation_time_seconds": 0.697292,
+      "compilation_time_seconds": 0.791039,
       "error_message": null,
       "exit_code": 0,
-      "peak_rss_kb": 50820,
+      "peak_rss_kb": 50952,
       "run": 1,
       "status": "SUCCESS",
-      "sys_cpu_s": 0.09,
-      "user_cpu_s": 0.56
+      "sys_cpu_s": 0.19,
+      "user_cpu_s": 0.54
     },
     {
-      "compilation_time_seconds": 0.668612,
+      "compilation_time_seconds": 0.751665,
       "error_message": null,
       "exit_code": 0,
-      "peak_rss_kb": 50860,
+      "peak_rss_kb": 50936,
       "run": 2,
       "status": "SUCCESS",
-      "sys_cpu_s": 0.09,
-      "user_cpu_s": 0.55
+      "sys_cpu_s": 0.18,
+      "user_cpu_s": 0.54
     },
     {
-      "compilation_time_seconds": 0.683558,
+      "compilation_time_seconds": 0.750086,
       "error_message": null,
       "exit_code": 0,
-      "peak_rss_kb": 50924,
+      "peak_rss_kb": 50724,
       "run": 3,
       "status": "SUCCESS",
-      "sys_cpu_s": 0.08,
-      "user_cpu_s": 0.57
-    },
-    {
-      "compilation_time_seconds": 0.691504,
-      "error_message": null,
-      "exit_code": 0,
-      "peak_rss_kb": 50864,
-      "run": 4,
-      "status": "SUCCESS",
-      "sys_cpu_s": 0.11,
+      "sys_cpu_s": 0.17,
       "user_cpu_s": 0.55
     },
     {
-      "compilation_time_seconds": 0.689272,
+      "compilation_time_seconds": 0.751092,
       "error_message": null,
       "exit_code": 0,
-      "peak_rss_kb": 50980,
+      "peak_rss_kb": 50692,
+      "run": 4,
+      "status": "SUCCESS",
+      "sys_cpu_s": 0.18,
+      "user_cpu_s": 0.54
+    },
+    {
+      "compilation_time_seconds": 0.675093,
+      "error_message": null,
+      "exit_code": 0,
+      "peak_rss_kb": 50748,
       "run": 5,
       "status": "SUCCESS",
       "sys_cpu_s": 0.1,
-      "user_cpu_s": 0.56
-    },
-    {
-      "compilation_time_seconds": 0.684,
-      "error_message": null,
-      "exit_code": 0,
-      "peak_rss_kb": 50856,
-      "run": 6,
-      "status": "SUCCESS",
-      "sys_cpu_s": 0.09,
-      "user_cpu_s": 0.57
-    },
-    {
-      "compilation_time_seconds": 0.684138,
-      "error_message": null,
-      "exit_code": 0,
-      "peak_rss_kb": 50996,
-      "run": 7,
-      "status": "SUCCESS",
-      "sys_cpu_s": 0.1,
       "user_cpu_s": 0.55
     },
     {
-      "compilation_time_seconds": 0.694959,
+      "compilation_time_seconds": 0.660052,
       "error_message": null,
       "exit_code": 0,
-      "peak_rss_kb": 50860,
+      "peak_rss_kb": 50952,
+      "run": 6,
+      "status": "SUCCESS",
+      "sys_cpu_s": 0.11,
+      "user_cpu_s": 0.52
+    },
+    {
+      "compilation_time_seconds": 0.666013,
+      "error_message": null,
+      "exit_code": 0,
+      "peak_rss_kb": 50840,
+      "run": 7,
+      "status": "SUCCESS",
+      "sys_cpu_s": 0.08,
+      "user_cpu_s": 0.55
+    },
+    {
+      "compilation_time_seconds": 0.669857,
+      "error_message": null,
+      "exit_code": 0,
+      "peak_rss_kb": 50664,
       "run": 8,
       "status": "SUCCESS",
       "sys_cpu_s": 0.1,
-      "user_cpu_s": 0.57
+      "user_cpu_s": 0.54
     },
     {
-      "compilation_time_seconds": 0.692142,
+      "compilation_time_seconds": 0.662926,
       "error_message": null,
       "exit_code": 0,
-      "peak_rss_kb": 50996,
+      "peak_rss_kb": 50860,
       "run": 9,
       "status": "SUCCESS",
       "sys_cpu_s": 0.1,
-      "user_cpu_s": 0.57
+      "user_cpu_s": 0.53
     },
     {
-      "compilation_time_seconds": 0.693795,
+      "compilation_time_seconds": 0.666623,
       "error_message": null,
       "exit_code": 0,
-      "peak_rss_kb": 50856,
+      "peak_rss_kb": 50640,
       "run": 10,
       "status": "SUCCESS",
       "sys_cpu_s": 0.1,
-      "user_cpu_s": 0.56
+      "user_cpu_s": 0.53
     }
   ],
   "runs_per_param_requested": 10,
@@ -125,7 +125,7 @@
   "slurm_partition": "cncz",
   "slurm_timelimit_requested": "06:00:00",
   "source_file": "/home/rhensen/param-bench/3-param.sac",
-  "started_at": "2026-05-25T04:36:13+00:00",
+  "started_at": "2026-05-25T12:28:52+00:00",
   "stdlib_branch": "master",
   "stdlib_build": "/home/rhensen/Stdlib/build-orig",
   "stdlib_commit": "9afffd46db51fd6877048f34fbd6c5a5de5eede5",

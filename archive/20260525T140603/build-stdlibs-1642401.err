@@ -1,0 +1,34 @@
+[0m
+ * Stdlib configuration done.
+ *
+ * sac2c executable:       /home/rhensen/sacoriginal/sac2c/build_p/sac2c_p
+ * local builddir:         /home/rhensen/Stdlib/build-orig/lib
+ * targets:                seq;mt_pth
+ * sac2c CPP flags:        -DHAVE_CONFIG_H;-cppI/home/rhensen/Stdlib/build-orig/include;-cppI/home/rhensen/Stdlib/include
+ * sac2c extra flags:      -DHAVE_CONFIG_H;-I/home/rhensen/Stdlib/build-orig/include;-I/home/rhensen/Stdlib/include
+ *
+ * Configuration state:
+ * - full types:           OFF
+ * - build generic         OFF
+ * - build extended:       ON
+ *
+ * Packaging state:
+ * - is release:           FALSE
+[0m
+[0m
+ * Stdlib configuration done.
+ *
+ * sac2c executable:       /home/rhensen/sac2c/build_p/sac2c_p
+ * local builddir:         /home/rhensen/Stdlib/build-new/lib
+ * targets:                seq;mt_pth
+ * sac2c CPP flags:        -DHAVE_CONFIG_H;-cppI/home/rhensen/Stdlib/build-new/include;-cppI/home/rhensen/Stdlib/include
+ * sac2c extra flags:      -DHAVE_CONFIG_H;-I/home/rhensen/Stdlib/build-new/include;-I/home/rhensen/Stdlib/include
+ *
+ * Configuration state:
+ * - full types:           OFF
+ * - build generic         OFF
+ * - build extended:       ON
+ *
+ * Packaging state:
+ * - is release:           FALSE
+[0m

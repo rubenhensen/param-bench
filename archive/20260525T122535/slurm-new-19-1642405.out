@@ -1,0 +1,45 @@
+========================================================================
+Parameter benchmark — task new/param=19
+========================================================================
+Compiler   : new  (/home/rhensen/sac2c/build_p/sac2c_p)
+Source     : /home/rhensen/param-bench/19-param.sac
+Stdlib     : /home/rhensen/Stdlib/build-new
+Runs       : 10 (timeout 1800s, vmem cap 14000000KB)
+Job ID     : 1642405 (task 19)
+Node       : cn99
+========================================================================
+
+--- run 1/10 ---
+  status=SUCCESS  wall=0.951191s  rss=56684KB  exit=0
+
+--- run 2/10 ---
+  status=SUCCESS  wall=0.894159s  rss=56584KB  exit=0
+
+--- run 3/10 ---
+  status=SUCCESS  wall=0.892893s  rss=56716KB  exit=0
+
+--- run 4/10 ---
+  status=SUCCESS  wall=0.806788s  rss=56612KB  exit=0
+
+--- run 5/10 ---
+  status=SUCCESS  wall=0.803672s  rss=56584KB  exit=0
+
+--- run 6/10 ---
+  status=SUCCESS  wall=0.804324s  rss=56848KB  exit=0
+
+--- run 7/10 ---
+  status=SUCCESS  wall=0.891031s  rss=56736KB  exit=0
+
+--- run 8/10 ---
+  status=SUCCESS  wall=0.887195s  rss=56632KB  exit=0
+
+--- run 9/10 ---
+  status=SUCCESS  wall=0.796628s  rss=56760KB  exit=0
+
+--- run 10/10 ---
+  status=SUCCESS  wall=0.799755s  rss=56744KB  exit=0
+
+========================================================================
+Task complete: SUCCESS
+Record: /home/rhensen/param-bench/results/param-new-19.json
+========================================================================

@@ -2,9 +2,9 @@
   "array_task_id": 12,
   "compiler": "orig",
   "cpu_model": "Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz",
-  "finished_at": "2026-05-25T04:47:39+00:00",
+  "finished_at": "2026-05-25T12:46:33+00:00",
   "gcc_version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
-  "job_id": "1642222",
+  "job_id": "1642447",
   "kernel": "6.17.0-14-generic",
   "node": "cn99",
   "os_release": "Ubuntu 24.04.4 LTS",
@@ -14,23 +14,23 @@
   "runs": [
     {
       "compilation_time_seconds": null,
-      "error_message": "sac2c exited with 139",
+      "error_message": "RSS 13964704kB >= 95% of vmem cap 14000000kB; compiler aborted (exit 139)",
       "exit_code": 139,
       "peak_rss_kb": null,
       "run": 1,
-      "status": "ERROR",
-      "sys_cpu_s": 7.55,
-      "user_cpu_s": 23.59
+      "status": "OOM",
+      "sys_cpu_s": 7.25,
+      "user_cpu_s": 23.76
     },
     {
       "compilation_time_seconds": null,
-      "error_message": "sac2c exited with 139",
+      "error_message": "RSS 13964528kB >= 95% of vmem cap 14000000kB; compiler aborted (exit 139)",
       "exit_code": 139,
       "peak_rss_kb": null,
       "run": 2,
-      "status": "ERROR",
-      "sys_cpu_s": 7.37,
-      "user_cpu_s": 23.87
+      "status": "OOM",
+      "sys_cpu_s": 7.52,
+      "user_cpu_s": 23.6
     },
     {
       "compilation_time_seconds": null,
@@ -125,7 +125,7 @@
   "slurm_partition": "cncz",
   "slurm_timelimit_requested": "06:00:00",
   "source_file": "/home/rhensen/param-bench/12-param.sac",
-  "started_at": "2026-05-25T04:46:36+00:00",
+  "started_at": "2026-05-25T12:45:30+00:00",
   "stdlib_branch": "master",
   "stdlib_build": "/home/rhensen/Stdlib/build-orig",
   "stdlib_commit": "9afffd46db51fd6877048f34fbd6c5a5de5eede5",

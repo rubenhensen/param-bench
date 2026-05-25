@@ -295,6 +295,18 @@ for run in $(seq 1 "${RUNS_PER_PARAM}"); do
     overall_status="PARTIAL"
   fi
 
+  # RSS-based OOM reclassification: if peak RSS ≥ 95 % of the vmem cap, the
+  # run hit the memory wall regardless of exit code. The compiler may call
+  # abort() (exit 134) on an internal malloc failure rather than waiting to be
+  # killed by the kernel (exit 137), so exit-code-only classification misses it.
+  if [[ "${status}" == "ERROR" && -n "${peak_rss_kb}" ]]; then
+    rss_pct=$(awk "BEGIN{printf \"%d\", ${peak_rss_kb} * 100 / ${RUN_VMEM_LIMIT_KB}}")
+    if (( rss_pct >= 95 )); then
+      status="OOM"
+      err_msg="RSS ${peak_rss_kb}kB >= 95% of vmem cap ${RUN_VMEM_LIMIT_KB}kB; compiler aborted (exit ${exit_code})"
+    fi
+  fi
+
   # On non-SUCCESS, blank the compilation_time and peak_rss
   if [[ "${status}" != "SUCCESS" ]]; then
     record_time=""

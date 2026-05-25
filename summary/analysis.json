@@ -31,391 +31,454 @@
   },
   "per_cell": {
     "new/0": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
+      "max_rss_kb": 37104.0,
+      "max_time": 0.598735,
+      "mean_rss_kb": 36994.0,
+      "mean_time": 0.5649014,
+      "min_rss_kb": 36888.0,
+      "min_time": 0.556147,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 78.18496587508936,
+      "std_time": 0.01241339186523974
     },
     "new/1": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
+      "max_rss_kb": 44184.0,
+      "max_time": 0.664285,
+      "mean_rss_kb": 43909.6,
+      "mean_time": 0.6325417,
+      "min_rss_kb": 43348.0,
+      "min_time": 0.624072,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 223.41351794374486,
+      "std_time": 0.01181168598418062
     },
     "new/10": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
+      "max_rss_kb": 49324.0,
+      "max_time": 0.737711,
+      "mean_rss_kb": 49114.4,
+      "mean_time": 0.7077678,
+      "min_rss_kb": 48936.0,
+      "min_time": 0.699294,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 114.8246973046788,
+      "std_time": 0.011232198981301733
     },
     "new/11": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
+      "max_rss_kb": 50088.0,
+      "max_time": 0.82303,
+      "mean_rss_kb": 49973.6,
+      "mean_time": 0.7496451,
+      "min_rss_kb": 49768.0,
+      "min_time": 0.702827,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 87.55848838855597,
+      "std_time": 0.04159539291115465
     },
     "new/12": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
+      "max_rss_kb": 50992.0,
+      "max_time": 0.824139,
+      "mean_rss_kb": 50731.2,
+      "mean_time": 0.7904677,
+      "min_rss_kb": 50540.0,
+      "min_time": 0.721466,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 134.52533838153565,
+      "std_time": 0.0423890150027103
     },
     "new/13": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
+      "max_rss_kb": 51692.0,
+      "max_time": 0.862867,
+      "mean_rss_kb": 51553.6,
+      "mean_time": 0.7900510000000001,
+      "min_rss_kb": 51376.0,
+      "min_time": 0.731426,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 84.81509299647085,
+      "std_time": 0.05157487340858057
     },
     "new/14": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
+      "max_rss_kb": 52652.0,
+      "max_time": 0.780561,
+      "mean_rss_kb": 52406.8,
+      "mean_time": 0.7474183999999999,
+      "min_rss_kb": 52232.0,
+      "min_time": 0.737045,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 145.35229234136244,
+      "std_time": 0.012938680777678473
     },
     "new/15": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
+      "max_rss_kb": 53368.0,
+      "max_time": 0.78257,
+      "mean_rss_kb": 53233.2,
+      "mean_time": 0.7568206999999999,
+      "min_rss_kb": 53116.0,
+      "min_time": 0.749074,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 73.27391532234829,
+      "std_time": 0.01000373630255772
     },
     "new/16": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
+      "max_rss_kb": 54184.0,
+      "max_time": 0.811252,
+      "mean_rss_kb": 54071.2,
+      "mean_time": 0.7726066,
+      "min_rss_kb": 53912.0,
+      "min_time": 0.761944,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 85.70336438359153,
+      "std_time": 0.014197360538729255
     },
     "new/17": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "new/18": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "new/19": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "new/2": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "new/3": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "new/4": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "new/5": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "new/6": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "new/7": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "new/8": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "new/9": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "orig/0": {
-      "max_rss_kb": 40204.0,
-      "max_time": 0.613429,
-      "mean_rss_kb": 40136.8,
-      "mean_time": 0.5805499999999999,
-      "min_rss_kb": 39968.0,
-      "min_time": 0.570779,
-      "n": 10,
-      "status_label": "SUCCESS",
-      "std_rss_kb": 82.44702002565715,
-      "std_time": 0.012320015115430839
-    },
-    "orig/1": {
-      "max_rss_kb": 50948.0,
-      "max_time": 0.714478,
-      "mean_rss_kb": 50890.8,
-      "mean_time": 0.6879225000000001,
-      "min_rss_kb": 50800.0,
-      "min_time": 0.673645,
-      "n": 10,
-      "status_label": "SUCCESS",
-      "std_rss_kb": 56.82096639641236,
-      "std_time": 0.013477687917855582
-    },
-    "orig/10": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "orig/11": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "orig/12": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "orig/13": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "orig/14": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "orig/15": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "orig/16": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "orig/17": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "orig/18": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "orig/19": {
-      "breakdown": {
-        "ERROR": 2,
-        "SKIPPED": 8
-      },
-      "n": 0,
-      "n_attempted": 10,
-      "status_label": "ERROR"
-    },
-    "orig/2": {
-      "max_rss_kb": 48048.0,
-      "max_time": 0.651192,
-      "mean_rss_kb": 47914.4,
-      "mean_time": 0.6265509,
-      "min_rss_kb": 47736.0,
-      "min_time": 0.611484,
-      "n": 10,
-      "status_label": "SUCCESS",
-      "std_rss_kb": 90.63136567681435,
-      "std_time": 0.012881306148834435
-    },
-    "orig/3": {
-      "max_rss_kb": 50996.0,
-      "max_time": 0.697292,
-      "mean_rss_kb": 50901.2,
-      "mean_time": 0.6879272000000001,
-      "min_rss_kb": 50820.0,
-      "min_time": 0.668612,
-      "n": 10,
-      "status_label": "SUCCESS",
-      "std_rss_kb": 66.80119759405515,
-      "std_time": 0.008339271801409157
-    },
-    "orig/4": {
-      "max_rss_kb": 58552.0,
-      "max_time": 0.839368,
-      "mean_rss_kb": 58354.4,
-      "mean_time": 0.7961710000000001,
-      "min_rss_kb": 58152.0,
-      "min_time": 0.780405,
+      "max_rss_kb": 55036.0,
+      "max_time": 0.818375,
+      "mean_rss_kb": 54905.6,
+      "mean_time": 0.789652,
+      "min_rss_kb": 54720.0,
+      "min_time": 0.772977,
       "n": 10,
       "status_label": "SUCCESS",
       "std_rss_kb": 104.32768887820083,
-      "std_time": 0.017728763051418253
+      "std_time": 0.011336278176230879
     },
-    "orig/5": {
-      "max_rss_kb": 82964.0,
-      "max_time": 1.270488,
-      "mean_rss_kb": 82739.6,
-      "mean_time": 1.2185012,
-      "min_rss_kb": 82604.0,
-      "min_time": 1.174698,
+    "new/18": {
+      "max_rss_kb": 55984.0,
+      "max_time": 0.823216,
+      "mean_rss_kb": 55845.2,
+      "mean_time": 0.7941397,
+      "min_rss_kb": 55528.0,
+      "min_time": 0.783506,
       "n": 10,
       "status_label": "SUCCESS",
-      "std_rss_kb": 108.212958763932,
-      "std_time": 0.032111647391215845
+      "std_rss_kb": 136.7307166985125,
+      "std_time": 0.011688373701627116
     },
-    "orig/6": {
-      "max_rss_kb": 167548.0,
-      "max_time": 3.368098,
-      "mean_rss_kb": 167389.6,
-      "mean_time": 3.3209522,
-      "min_rss_kb": 167116.0,
-      "min_time": 3.268831,
+    "new/19": {
+      "max_rss_kb": 56828.0,
+      "max_time": 0.8432,
+      "mean_rss_kb": 56719.2,
+      "mean_time": 0.8108715,
+      "min_rss_kb": 56596.0,
+      "min_time": 0.8011,
       "n": 10,
       "status_label": "SUCCESS",
-      "std_rss_kb": 145.04803801959312,
-      "std_time": 0.02765249027483781
+      "std_rss_kb": 95.08452380207132,
+      "std_time": 0.012254710733700174
     },
-    "orig/7": {
-      "max_rss_kb": 515436.0,
-      "max_time": 18.148196,
-      "mean_rss_kb": 515160.8,
-      "mean_time": 17.363960199999998,
-      "min_rss_kb": 514956.0,
-      "min_time": 16.925831,
+    "new/2": {
+      "max_rss_kb": 43064.0,
+      "max_time": 0.617101,
+      "mean_rss_kb": 42861.2,
+      "mean_time": 0.5868738,
+      "min_rss_kb": 42712.0,
+      "min_time": 0.579149,
       "n": 10,
       "status_label": "SUCCESS",
-      "std_rss_kb": 140.2575408945194,
-      "std_time": 0.4233498733285372
+      "std_rss_kb": 111.10835552138582,
+      "std_time": 0.011109491005442148
     },
-    "orig/8": {
-      "max_rss_kb": 1699432.0,
-      "max_time": 205.175851,
-      "mean_rss_kb": 1699246.0,
-      "mean_time": 173.5999992,
-      "min_rss_kb": 1699040.0,
-      "min_time": 154.362782,
+    "new/3": {
+      "max_rss_kb": 44008.0,
+      "max_time": 0.655557,
+      "mean_rss_kb": 43934.0,
+      "mean_time": 0.6360303,
+      "min_rss_kb": 43768.0,
+      "min_time": 0.62223,
       "n": 10,
       "status_label": "SUCCESS",
-      "std_rss_kb": 133.25664461231693,
-      "std_time": 17.537081656671656
+      "std_rss_kb": 64.94442068244028,
+      "std_time": 0.008839417351965126
     },
-    "orig/9": {
+    "new/4": {
+      "max_rss_kb": 44872.0,
+      "max_time": 0.668917,
+      "mean_rss_kb": 44604.4,
+      "mean_time": 0.6442625000000001,
+      "min_rss_kb": 44480.0,
+      "min_time": 0.634633,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 113.75529291715033,
+      "std_time": 0.009639621929538747
+    },
+    "new/5": {
+      "max_rss_kb": 45544.0,
+      "max_time": 0.675595,
+      "mean_rss_kb": 45328.8,
+      "mean_time": 0.6594983,
+      "min_rss_kb": 45184.0,
+      "min_time": 0.64099,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 124.93269299017683,
+      "std_time": 0.011120122681677369
+    },
+    "new/6": {
+      "max_rss_kb": 46280.0,
+      "max_time": 0.712729,
+      "mean_rss_kb": 46130.0,
+      "mean_time": 0.6866141,
+      "min_rss_kb": 45904.0,
+      "min_time": 0.674886,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 107.31883960113123,
+      "std_time": 0.010942952307814871
+    },
+    "new/7": {
+      "max_rss_kb": 47024.0,
+      "max_time": 0.778211,
+      "mean_rss_kb": 46850.0,
+      "mean_time": 0.7291207000000001,
+      "min_rss_kb": 46764.0,
+      "min_time": 0.661912,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 76.4373381709925,
+      "std_time": 0.039118178527948425
+    },
+    "new/8": {
+      "max_rss_kb": 47688.0,
+      "max_time": 0.803865,
+      "mean_rss_kb": 47545.6,
+      "mean_time": 0.7242486,
+      "min_rss_kb": 47240.0,
+      "min_time": 0.683574,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 154.19698800920565,
+      "std_time": 0.038098736917529324
+    },
+    "new/9": {
+      "max_rss_kb": 48452.0,
+      "max_time": 0.7469,
+      "mean_rss_kb": 48341.6,
+      "mean_time": 0.7167741,
+      "min_rss_kb": 48188.0,
+      "min_time": 0.693413,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 84.89889411660333,
+      "std_time": 0.015357938609143564
+    },
+    "orig/0": {
+      "max_rss_kb": 40200.0,
+      "max_time": 0.605821,
+      "mean_rss_kb": 40123.2,
+      "mean_time": 0.5779232,
+      "min_rss_kb": 39960.0,
+      "min_time": 0.565905,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 100.1296936755304,
+      "std_time": 0.010955696456384908
+    },
+    "orig/1": {
+      "max_rss_kb": 51024.0,
+      "max_time": 0.701313,
+      "mean_rss_kb": 50900.8,
+      "mean_time": 0.6722328999999999,
+      "min_rss_kb": 50776.0,
+      "min_time": 0.66365,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 71.15054462194931,
+      "std_time": 0.010981268895006821
+    },
+    "orig/10": {
       "breakdown": {
-        "SKIPPED": 8,
-        "TIMEOUT": 2
+        "OOM": 2,
+        "SKIPPED": 8
       },
       "n": 0,
       "n_attempted": 10,
-      "status_label": "TIME OUT"
+      "status_label": "OUT OF MEM."
+    },
+    "orig/11": {
+      "breakdown": {
+        "OOM": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "OUT OF MEM."
+    },
+    "orig/12": {
+      "breakdown": {
+        "OOM": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "OUT OF MEM."
+    },
+    "orig/13": {
+      "breakdown": {
+        "OOM": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "OUT OF MEM."
+    },
+    "orig/14": {
+      "breakdown": {
+        "OOM": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "OUT OF MEM."
+    },
+    "orig/15": {
+      "breakdown": {
+        "OOM": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "OUT OF MEM."
+    },
+    "orig/16": {
+      "breakdown": {
+        "OOM": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "OUT OF MEM."
+    },
+    "orig/17": {
+      "breakdown": {
+        "OOM": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "OUT OF MEM."
+    },
+    "orig/18": {
+      "breakdown": {
+        "OOM": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "OUT OF MEM."
+    },
+    "orig/19": {
+      "breakdown": {
+        "OOM": 2,
+        "SKIPPED": 8
+      },
+      "n": 0,
+      "n_attempted": 10,
+      "status_label": "OUT OF MEM."
+    },
+    "orig/2": {
+      "max_rss_kb": 48092.0,
+      "max_time": 0.703744,
+      "mean_rss_kb": 47805.2,
+      "mean_time": 0.6336509000000001,
+      "min_rss_kb": 47516.0,
+      "min_time": 0.607872,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 164.2226131404158,
+      "std_time": 0.0354971870010694
+    },
+    "orig/3": {
+      "max_rss_kb": 50952.0,
+      "max_time": 0.791039,
+      "mean_rss_kb": 50800.8,
+      "mean_time": 0.7044445999999999,
+      "min_rss_kb": 50640.0,
+      "min_time": 0.660052,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 122.08266780250904,
+      "std_time": 0.05016334484063041
+    },
+    "orig/4": {
+      "max_rss_kb": 58552.0,
+      "max_time": 0.772559,
+      "mean_rss_kb": 58344.4,
+      "mean_time": 0.7381906,
+      "min_rss_kb": 58148.0,
+      "min_time": 0.730479,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 135.69180766231494,
+      "std_time": 0.012549127187002119
+    },
+    "orig/5": {
+      "max_rss_kb": 82988.0,
+      "max_time": 1.08542,
+      "mean_rss_kb": 82793.6,
+      "mean_time": 1.0572804999999998,
+      "min_rss_kb": 82560.0,
+      "min_time": 1.047599,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 128.00277774763762,
+      "std_time": 0.011862266237012966
+    },
+    "orig/6": {
+      "max_rss_kb": 167564.0,
+      "max_time": 2.924292,
+      "mean_rss_kb": 167415.2,
+      "mean_time": 2.9032844,
+      "min_rss_kb": 167232.0,
+      "min_time": 2.884531,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 114.58601815036404,
+      "std_time": 0.01347803268037783
+    },
+    "orig/7": {
+      "max_rss_kb": 515452.0,
+      "max_time": 16.379714,
+      "mean_rss_kb": 515233.2,
+      "mean_time": 16.092154799999996,
+      "min_rss_kb": 514928.0,
+      "min_time": 15.84989,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 168.4654926749755,
+      "std_time": 0.19909004168901415
+    },
+    "orig/8": {
+      "max_rss_kb": 1699360.0,
+      "max_time": 161.77766,
+      "mean_rss_kb": 1699172.0,
+      "mean_time": 147.2017714,
+      "min_rss_kb": 1699036.0,
+      "min_time": 134.316125,
+      "n": 10,
+      "status_label": "SUCCESS",
+      "std_rss_kb": 98.77471561307806,
+      "std_time": 11.50527232754531
+    },
+    "orig/9": {
+      "max_rss_kb": 5789800.0,
+      "max_time": 1783.868195,
+      "mean_rss_kb": 5789620.888888889,
+      "mean_time": 1753.025835,
+      "min_rss_kb": 5789076.0,
+      "min_time": 1745.962476,
+      "n": 9,
+      "status_label": "PARTIAL (9/10)",
+      "std_rss_kb": 220.77842084567754,
+      "std_time": 11.879975016252558
     }
   },
   "stdlib": {

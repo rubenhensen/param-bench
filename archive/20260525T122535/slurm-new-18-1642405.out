@@ -1,0 +1,74 @@
+========================================================================
+Parameter benchmark — task new/param=18
+========================================================================
+Compiler   : new  (/home/rhensen/sac2c/build_p/sac2c_p)
+Source     : /home/rhensen/param-bench/18-param.sac
+Stdlib     : /home/rhensen/Stdlib/build-new
+Runs       : 10 (timeout 1800s, vmem cap 14000000KB)
+Job ID     : 1642405 (task 18)
+Node       : cn99
+========================================================================
+
+--- run 1/10 ---
+  status=SUCCESS  wall=0.827666s  rss=55804KB  exit=0
+
+--- run 2/10 ---
+  status=SUCCESS  wall=0.786721s  rss=55912KB  exit=0
+
+--- run 3/10 ---
+  status=SUCCESS  wall=0.792178s  rss=55720KB  exit=0
+
+--- run 4/10 ---
+  status=SUCCESS  wall=0.781790s  rss=55764KB  exit=0
+
+--- run 5/10 ---
+  status=SUCCESS  wall=0.846499s  rss=55732KB  exit=0
+
+--- run 6/10 ---
+  status=SUCCESS  wall=0.886605s  rss=55940KB  exit=0
+
+--- run 7/10 ---
+  status=SUCCESS  wall=0.803174s  rss=55792KB  exit=0
+
+--- run 8/10 ---
+  status=SUCCESS  wall=0.784267s  rss=55692KB  exit=0
+
+--- run 9/10 ---
+  status=SUCCESS  wall=0.797478s  rss=55912KB  exit=0
+
+--- run 10/10 ---
+  status=SUCCESS  wall=0.888605s  rss=55868KB  exit=0
+
+========================================================================
+Task complete: SUCCESS
+Record: /home/rhensen/param-bench/results/param-new-18.json
+========================================================================
+
+
+###############################################################################
+Science Cluster
+Job 1642425 for user 'rhensen'
+Finished at: Mon May 25 12:08:56 UTC 2026
+
+Job details:
+============
+
+Name                : param-new
+User                : rhensen
+Partition           : cncz
+Nodes               : cn99
+Cores               : 4
+State               : COMPLETED
+Submit              : 2026-05-25T12:06:21
+Start               : 2026-05-25T12:08:47
+End                 : 2026-05-25T12:08:56
+Reserved walltime   : 06:00:00
+Used walltime       : 00:00:09
+Used CPU time       : 00:00:08 (efficiency: 24.27%)
+% User (Computation): 79.86%
+% System (I/O)      : 20.14%
+Mem reserved        : 14G
+Max Mem used        : 69.25M (cn99)
+Max Disk Write      : 0.00  (cn99)
+Max Disk Read       : 0.00  (cn99)
+

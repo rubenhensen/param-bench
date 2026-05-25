@@ -1,0 +1,118 @@
+========================================================================
+Parameter benchmark — task orig/param=10
+========================================================================
+Compiler   : orig  (/home/rhensen/sacoriginal/sac2c/build_p/sac2c_p)
+Source     : /home/rhensen/param-bench/10-param.sac
+Stdlib     : /home/rhensen/Stdlib/build-orig
+Runs       : 10 (timeout 1800s, vmem cap 14000000KB)
+Job ID     : 1642447 (task 10)
+Node       : cn99
+========================================================================
+
+--- run 1/10 ---
+  status=OOM  wall=95.690432s  rss=13964600KB  exit=134
+  --- last 20 lines of /scratch/rhensen/param_bench_orig_10_1642447_10/run-1.log ---
+
+Please, submit the bug report online at
+https://gitlab.sac-home.org/sac-group/sac2c/-/issues.
+
+For your convenience, the compiler has pre-fabricated a bug report
+in the file "./10-param.sacbugreport" !
+
+Besides some infos concerning the compiler version and its
+usage it contains the specified source file.
+
+If you want to send that bug report to us, you may simply type
+  mail bugs@sac-home.org < 10-param.sacbugreport
+
+If you decide to file a bug on our bug-tracker, please go to
+  https://gitlab.sac-home.org/sac-group/sac2c/-/issues.
+
+When filing a bug report, please copy/paste the initial comment section of
+the bug report into the plain text comment section of the bug-tracker, and add
+the whole bug report file as an attachment.
+
+  ------------------------------------
+
+--- run 2/10 ---
+  status=OOM  wall=95.662812s  rss=13964692KB  exit=134
+  --- last 20 lines of /scratch/rhensen/param_bench_orig_10_1642447_10/run-2.log ---
+
+Please, submit the bug report online at
+https://gitlab.sac-home.org/sac-group/sac2c/-/issues.
+
+For your convenience, the compiler has pre-fabricated a bug report
+in the file "./10-param.sacbugreport" !
+
+Besides some infos concerning the compiler version and its
+usage it contains the specified source file.
+
+If you want to send that bug report to us, you may simply type
+  mail bugs@sac-home.org < 10-param.sacbugreport
+
+If you decide to file a bug on our bug-tracker, please go to
+  https://gitlab.sac-home.org/sac-group/sac2c/-/issues.
+
+When filing a bug report, please copy/paste the initial comment section of
+the bug report into the plain text comment section of the bug-tracker, and add
+the whole bug report file as an attachment.
+
+  ------------------------------------
+
+--- run 3/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 4/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 5/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 6/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 7/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 8/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 9/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+--- run 10/10 ---
+Short-circuit (2 consecutive failures); skipping remaining runs.
+
+========================================================================
+Task complete: PARTIAL
+Record: /home/rhensen/param-bench/results/param-orig-10.json
+========================================================================
+
+
+###############################################################################
+Science Cluster
+Job 1642477 for user 'rhensen'
+Finished at: Mon May 25 12:45:29 UTC 2026
+
+Job details:
+============
+
+Name                : param-orig
+User                : rhensen
+Partition           : cncz
+Nodes               : cn99
+Cores               : 4
+State               : COMPLETED
+Submit              : 2026-05-25T12:25:43
+Start               : 2026-05-25T12:42:17
+End                 : 2026-05-25T12:45:29
+Reserved walltime   : 06:00:00
+Used walltime       : 00:03:12
+Used CPU time       : 00:03:11 (efficiency: 24.97%)
+% User (Computation): 91.78%
+% System (I/O)      :  8.22%
+Mem reserved        : 14G
+Max Mem used        : 13.34G (cn99)
+Max Disk Write      : 20.48K (cn99)
+Max Disk Read       : 1.41M (cn99)
+
